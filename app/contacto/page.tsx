@@ -1,3 +1,5 @@
+
+
 import { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
 
@@ -28,3 +30,6 @@ export default function ContactPage({
     </div>
   );
 }
+
+// This is a dynamic route, so we need to set the dynamic export option
+export const dynamic = 'force-dynamic';
