@@ -1,15 +1,9 @@
-import HeroSection from '@/components/HeroSection';
-import FeaturedProducts from '@/components/FeaturedProducts';
-import CategoryHighlight from '@/components/CategoryHighlight';
-import Newsletter from '@/components/Newsletter';
+import Home from "@/components/Home";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="min-h-screen">
-      <HeroSection />
-      <FeaturedProducts />
-      <CategoryHighlight />
-      <Newsletter />
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
