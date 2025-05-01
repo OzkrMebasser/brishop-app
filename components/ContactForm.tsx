@@ -4,16 +4,23 @@ import { useState, useEffect } from "react";
 import { FiUser, FiMail, FiMessageSquare, FiPackage, FiSend } from "react-icons/fi";
 import { getProductById } from "@/data/products";
 
-interface ContactFormProps {
-  selectedProductId?: string;
-}
+// Define the Product type if not already defined elsewhere
+type Product = {
+  id: string;
+  nombre: string;
+};
+
+type ContactFormProps = {
+  selectedProductId: string | undefined;
+  products: Product[];
+};
 
 const ContactForm = ({ selectedProductId }: ContactFormProps) => {
   const [formData, setFormData] = useState({
     nombre: "",
     email: "",
     mensaje: "",
-    producto: selectedProductId || "",
+    producto: selectedProductId || "", // Product id initially, can be updated to product name later
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -37,6 +44,7 @@ const ContactForm = ({ selectedProductId }: ContactFormProps) => {
         setFormData((prev) => ({
           ...prev,
           mensaje: `Hola, estoy interesado/a en el producto "${product.nombre}". Me gustaría obtener más información.`,
+          producto: product.nombre, // Store product name instead of id
         }));
       }
     }
@@ -79,6 +87,9 @@ const ContactForm = ({ selectedProductId }: ContactFormProps) => {
     if (validateForm()) {
       setIsSubmitting(true);
 
+      // Construct the WhatsApp message URL with the product name instead of ID
+      const whatsappMessage = `https://wa.me/17785873661?text=Nombre: ${formData.nombre}%0AEmail: ${formData.email}%0AProducto: ${formData.producto || 'No seleccionado'}%0AMensaje: ${formData.mensaje}`;
+
       // Simulate API call
       setTimeout(() => {
         setIsSubmitting(false);
@@ -89,6 +100,9 @@ const ContactForm = ({ selectedProductId }: ContactFormProps) => {
           mensaje: "",
           producto: "",
         });
+
+        // Redirect to WhatsApp
+        window.location.href = whatsappMessage;
 
         // Reset form after 5 seconds
         setTimeout(() => {
@@ -196,9 +210,8 @@ const ContactForm = ({ selectedProductId }: ContactFormProps) => {
                   style={{ minHeight: "42px" }}
                 >
                   <option value="">Selecciona un producto</option>
-                  {/* If a product was pre-selected from URL params, show it */}
                   {selectedProduct && (
-                    <option value={selectedProduct.id} key={selectedProduct.id}>
+                    <option value={selectedProduct.nombre} key={selectedProduct.id}>
                       {selectedProduct.nombre}
                     </option>
                   )}
