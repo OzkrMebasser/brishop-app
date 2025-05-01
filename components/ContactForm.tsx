@@ -76,8 +76,8 @@ const ContactForm = ({ selectedProductId }: ContactFormProps) => {
 
       const product = getProductById(formData.producto);
       const productName = product ? product.nombre : "No seleccionado";
-
-      const whatsappMessage = `https://wa.me/17785873661?text=
+      5216121376977;
+      const whatsappMessage = `https://wa.me/5216121376977?text=
 Nombre: ${formData.nombre}
 Email: ${formData.email}
 Producto: ${productName}
