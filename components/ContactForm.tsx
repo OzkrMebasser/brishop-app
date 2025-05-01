@@ -76,12 +76,8 @@ const ContactForm = ({ selectedProductId }: ContactFormProps) => {
 
       const product = getProductById(formData.producto);
       const productName = product ? product.nombre : "No seleccionado";
-      5216121376977;
-      const whatsappMessage = `https://wa.me/5216121376977?text=
-Nombre: ${formData.nombre}
-Email: ${formData.email}
-Producto: ${productName}
-Mensaje: ${formData.mensaje}`;
+      // 5216121376977;
+      const whatsappMessage = `https://wa.me/5216121376977?text=Email: ${formData.email}%0ANombre: ${formData.nombre}%0AProducto: ${productName}%0AMensaje: ${formData.mensaje}`;
 
       setTimeout(() => {
         setIsSubmitting(false);
