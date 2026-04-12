@@ -10,14 +10,14 @@ const slides = [
     image: "https://images.pexels.com/photos/6044266/pexels-photo-6044266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Nueva Colección",
     subtitle: "Bolsas exclusivas",
-    link: "/categoria/bolsas-de-mujer",
+    link: "/categoria/bolsas",
     position: "right",
   },
   {
     image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Tenis de Temporada",
+    title: "Calzado de Temporada",
     subtitle: "Comodidad y estilo",
-    link: "/categoria/tenis",
+    link: "/categoria/calzado",
     position: "left",
   },
   {

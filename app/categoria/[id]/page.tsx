@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { categories, getCategoryById } from '@/data/categories';
 import { getProductsByCategory } from '@/data/products';
-import ProductGrid from '@/components/ProductGrid';
+import CategoryProductSection from '@/components/CategoryProductSection';
 import CategoryBanner from '@/components/CategoryBanner';
 
 interface CategoryPageProps {
@@ -50,7 +50,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           <h1 className="text-3xl font-semibold mb-8">{category.nombre}</h1>
           
           {products.length > 0 ? (
-            <ProductGrid products={products} />
+            <CategoryProductSection products={products} />
           ) : (
             <div className="text-center py-16">
               <p className="text-gray-600 mb-4">No hay productos disponibles en esta categoría.</p>

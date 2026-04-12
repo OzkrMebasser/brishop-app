@@ -1,9 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FiHeart } from "react-icons/fi";
+import { FaHeart } from "react-icons/fa";
+import { TbExternalLink } from "react-icons/tb";
+
 import { Product } from "@/data/products";
 
 interface ProductCardProps {
@@ -12,6 +15,22 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [liked, setLiked] = useState(false);
+
+  useEffect(() => {
+    const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+    setLiked(favorites.includes(product.id));
+  }, [product.id]);
+
+  const toggleLike = () => {
+    const favorites: string[] = JSON.parse(localStorage.getItem("favorites") || "[]");
+    const updated = liked
+      ? favorites.filter((id) => id !== product.id)
+      : [...favorites, product.id];
+    localStorage.setItem("favorites", JSON.stringify(updated));
+    setLiked(!liked);
+  };
+
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("es-MX", {
       style: "currency",
@@ -34,7 +53,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="product-image object-cover"
         />
-        
+
         {/* Badges */}
         <div className="absolute top-2 left-2 flex flex-col gap-2">
           {product.nuevo && (
@@ -51,51 +70,45 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
         {/* Like button */}
         <button
+          onClick={toggleLike}
           className="absolute top-2 right-2 p-2 bg-white/80 hover:bg-white rounded-full shadow-sm transition-all duration-300"
-          aria-label="Añadir a favoritos"
+          aria-label={liked ? "Quitar de favoritos" : "Añadir a favoritos"}
         >
-          <FiHeart
-            className="text-gray-500 hover:text-brishop-500 transition-colors"
-            size={18}
-          />
+          {liked ? (
+            <FaHeart className="text-brishop-500" size={18} />
+          ) : (
+            <FiHeart className="text-gray-500 hover:text-brishop-500 transition-colors" size={18} />
+          )}
         </button>
       </div>
 
       {/* Content */}
-      <div className="p-4">
-        <h3 className="text-lg font-medium text-gray-900 mb-1 truncate">
-          {product.nombre}
-        </h3>
-        <p className="text-gray-500 text-sm mb-2 line-clamp-2 h-10">
-          {product.descripcion}
-        </p>
-        <div className="flex items-center justify-between mt-3">
-          <span className="text-lg font-semibold text-brishop-800">
-            {formatPrice(product.precio)}
-          </span>
-          
-          <Link 
-            href={`/contacto?producto=${product.id}`}
-            className="bg-brishop-600 hover:bg-brishop-700 text-white text-sm py-2 px-4 rounded-md transition-colors duration-300"
-          >
-            Contactar
-          </Link>
-        </div>
-      </div>
+   <div className="flex items-center justify-between mt-3 p-4">
+  <div className="flex flex-col">
+    <span className="text-xs text-gray-400">Desde</span>
+    <span className="text-lg font-semibold text-brishop-800">
+      {formatPrice(product.precioDesde)}
+      <span className="text-xs font-normal text-gray-400 block">quincenal</span>
       
+    </span>
+ 
+  </div>
+
+  <Link
+    href={`/producto/${product.id}`}
+    className="bg-brishop-600 hover:bg-brishop-700 text-white text-sm py-2 px-4 rounded-md transition-colors duration-300"
+  >
+    Ver detalles{" "}
+    <TbExternalLink className="inline-block ml-1" size={16} />
+  </Link>
+</div>
+
       {/* Quick view overlay (mobile) */}
-      <div 
-        className={`absolute inset-0 bg-black/5 md:bg-transparent flex items-center justify-center opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 ${
+      <div
+        className={`absolute inset-0 bg-black/5 md:bg-transparent flex items-center justify-center opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 pointer-events-none ${
           isHovered ? "opacity-100" : ""
         }`}
-      >
-        <Link
-          href={`/producto/${product.id}`}
-          className="bg-white/90 hover:bg-white text-brishop-800 text-sm font-medium py-2 px-6 rounded-full shadow-md transition-all duration-300 transform translate-y-4 md:group-hover:translate-y-0"
-        >
-          Ver detalles
-        </Link>
-      </div>
+      ></div>
     </div>
   );
 };

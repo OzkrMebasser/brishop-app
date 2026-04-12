@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter, Montserrat } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-
+import WhatsappButton from '@/components/WhatsappButton';
 const montserrat = Montserrat({ 
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
@@ -29,6 +29,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${montserrat.variable} ${inter.variable} font-sans min-h-screen flex flex-col`}>
         <Navbar />
+        <WhatsappButton />
         <main className="flex-grow">
           {children}
         </main>

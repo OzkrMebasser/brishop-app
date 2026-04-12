@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FiShare2, FiHeart } from "react-icons/fi";
+import { FiShare2 } from "react-icons/fi";
+import { FiHeart } from "react-icons/fi";
+import { FaHeart } from "react-icons/fa";
 import { Product } from "@/data/products";
 
 interface ProductDetailProps {
@@ -11,7 +13,21 @@ interface ProductDetailProps {
 }
 
 const ProductDetail = ({ product }: ProductDetailProps) => {
-  const [isFavorite, setIsFavorite] = useState(false);
+  const [liked, setLiked] = useState(false);
+
+  useEffect(() => {
+    const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
+    setLiked(favorites.includes(product.id));
+  }, [product.id]);
+
+  const toggleLike = () => {
+    const favorites: string[] = JSON.parse(localStorage.getItem("favorites") || "[]");
+    const updated = liked
+      ? favorites.filter((id) => id !== product.id)
+      : [...favorites, product.id];
+    localStorage.setItem("favorites", JSON.stringify(updated));
+    setLiked(!liked);
+  };
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("es-MX", {
@@ -57,18 +73,15 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
                 </h1>
                 <div className="flex space-x-2">
                   <button
-                    onClick={() => setIsFavorite(!isFavorite)}
+                    onClick={toggleLike}
                     className="p-2 rounded-full border border-gray-200 hover:border-brishop-300 transition-colors"
-                    aria-label="Añadir a favoritos"
+                    aria-label={liked ? "Quitar de favoritos" : "Añadir a favoritos"}
                   >
-                    <FiHeart
-                      className={`${
-                        isFavorite
-                          ? "fill-brishop-500 text-brishop-500"
-                          : "text-gray-500"
-                      } transition-colors`}
-                      size={20}
-                    />
+                    {liked ? (
+                      <FaHeart className="text-brishop-500" size={20} />
+                    ) : (
+                      <FiHeart className="text-gray-500" size={20} />
+                    )}
                   </button>
                   <button
                     onClick={handleShare}
@@ -93,8 +106,36 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
                 )}
               </div>
 
-              <div className="text-2xl font-bold text-brishop-800 mb-6">
-                {formatPrice(product.precio)}
+              {/* Precios */}
+              <div className="flex flex-col gap-4 mb-6">
+                {/* Precio contado */}
+                <div className="flex items-center gap-3 p-3 bg-green-50 border border-green-100 rounded-lg">
+                  <div>
+                    <p className="text-xs text-green-600 font-medium uppercase tracking-wide">Precio de contado</p>
+                    <p className="text-2xl font-bold text-green-700">
+                      {formatPrice(product.precioContado)}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Precio crédito */}
+                <div className="flex items-center gap-3 p-3 bg-brishop-50 border border-brishop-100 rounded-lg">
+                  <div className="flex-1">
+                    <p className="text-xs text-brishop-600 font-medium uppercase tracking-wide">Precio a crédito</p>
+                    <p className="text-2xl font-bold text-brishop-800">
+                      {formatPrice(product.precioCredito)}
+                    </p>
+                  </div>
+                  <div className="text-right border-l border-brishop-100 pl-3">
+                    <p className="text-xs text-gray-400">Desde</p>
+                    <p className="text-2xl font-bold text-brishop-800">
+                      {formatPrice(product.precioDesde)}
+                    </p>
+                    <p className="text-xs text-gray-400">
+                      {product.abonos} abonos quincenales aprox.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <p className="text-gray-600 mb-8">{product.descripcion}</p>
