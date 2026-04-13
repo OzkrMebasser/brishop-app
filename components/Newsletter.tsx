@@ -34,11 +34,14 @@ const Newsletter = () => {
     setIsLoading(true);
 
     try {
+      console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID)
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        
         process.env.NEXT_PUBLIC_EMAILJS_NEWSLETTER_TEMPLATE_ID!,
         { subscriber_email: email },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        
       );
 
       setSubmitted(true);
