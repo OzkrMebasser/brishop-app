@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { Menu, X, Search } from "lucide-react";
 import { FaHeart } from "react-icons/fa";
 import { categories } from "@/data/categories";
@@ -19,6 +19,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +35,10 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
-      if (searchRef.current && !searchRef.current.contains(e.target as Node)) {
+      const target = e.target as Node;
+      // No cerrar si el click fue en un botón de resultado
+      if ((target as Element).closest("[data-search-result]")) return;
+      if (searchRef.current && !searchRef.current.contains(target)) {
         setShowDropdown(false);
       }
     };
@@ -60,14 +64,19 @@ const Navbar = () => {
   const handleSelect = (productId: string) => {
     setQuery("");
     setShowDropdown(false);
-    setIsOpen(false); // cierra el menú mobile también
     router.push(`/producto/${productId}`);
+    setTimeout(() => setIsOpen(false), 100);
   };
+  const navLinkClass = (href: string) =>
+    `nav-link ${pathname === href ? "underline underline-offset-4 text-brishop-500" : ""}`;
+
+  const navLinkMobileClass = (href: string) =>
+    `nav-link text-xl py-2 ${pathname === href ? "underline underline-offset-4 text-brishop-600" : ""}`;
 
   return (
     <header className="fixed w-full z-50 transition-all duration-300 py-2 bg-white shadow-md">
       <div className="container-custom flex items-center justify-between">
-        {/* Logo — sin cambios */}
+        {/* Logo */}
         <Link href="/" className="flex items-center">
           <div className="relative h-[4rem] w-36">
             <Image
@@ -80,33 +89,33 @@ const Navbar = () => {
           </div>
         </Link>
 
-        {/* Desktop Navigation — sin cambios */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link href="/" className="nav-link">
+          <Link href="/" className={navLinkClass("/")}>
             Inicio
           </Link>
           {categories.map((category) => (
             <Link
               key={category.id}
               href={`/categoria/${category.id}`}
-              className="nav-link"
+              className={navLinkClass(`/categoria/${category.id}`)}
             >
               {category.nombre}
             </Link>
           ))}
-          <Link href="/contacto" className="nav-link">
+          <Link href="/contacto" className={navLinkClass("/contacto")}>
             Contacto
           </Link>
           <Link
             href="/favoritos"
             title="Favoritos"
-            className="text-brishop-500"
+            className="bg-white p-2 rounded-full border border-brishop-200 hover:border-brishop-600 transition-colors"
           >
-            <FaHeart className="h-5 w-5" />
+            <FaHeart className="h-5 w-5 text-brishop-500" />
           </Link>
         </nav>
 
-        {/* Desktop Icons */}
+        {/* Desktop Search */}
         <div className="hidden md:flex items-center space-x-4" ref={searchRef}>
           <div className="relative">
             <button
@@ -115,7 +124,6 @@ const Navbar = () => {
             >
               <Search className="h-5 w-5" />
             </button>
-            {/* Buscador Desktop*/}
             <input
               type="text"
               value={query}
@@ -141,7 +149,7 @@ const Navbar = () => {
                         alt={product.nombre}
                         className="w-14 h-14 rounded-lg object-cover"
                       />
-                      <div className="text-left flex-1 ">
+                      <div className="text-left flex-1">
                         <p className="text-xs font-medium text-gray-900">
                           {product.nombre}
                         </p>
@@ -150,8 +158,8 @@ const Navbar = () => {
                         </p>
                       </div>
                       <span className="text-sm text-gray-700">
-                            <span className="text-xs text-gray-500">Desde: </span>
-                        ${product.precioDesde.toFixed(2)}{" "}
+                        <span className="text-xs text-gray-500">Desde: </span>$
+                        {product.precioDesde.toFixed(2)}{" "}
                         <span className="text-xs text-gray-500">quincenal</span>
                       </span>
                     </button>
@@ -192,39 +200,33 @@ const Navbar = () => {
             />
             {showDropdown && results.length > 0 && (
               <div className="absolute top-full mt-2 w-full bg-white border border-gray-100 rounded-xl shadow-lg overflow-hidden z-50">
-                {results.length === 0 ? (
-                  <p className="text-sm text-gray-400 text-center py-4">
-                    Sin resultados para &quot;{query}&quot;
-                  </p>
-                ) : (
-                  results.map((product) => (
-                    <button
-                      key={product.id}
-                      onClick={() => handleSelect(product.id)}
-                      className="w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-50 border-b border-gray-50 last:border-0 transition-colors"
-                    >
-                      <img
-                        src={product.imagen}
-                        alt={product.nombre}
-                        className="w-10 h-10 rounded-lg object-cover"
-                      />
-                      <div className="text-left flex-1">
-                        <p className="text-xs font-medium text-gray-900">
-                          {product.nombre}
-                        </p>
-                        <p className="text-xs text-gray-400 capitalize">
-                          {product.categoria}
-                        </p>
-                      </div>
-                      {/* <div className="text-xs  text-gray-500">Desde</div> */}
-                      <span className="text-sm text-gray-700">
-                        <span className="text-xs text-gray-500">Desde:</span>
-                        $ {product.precioDesde.toFixed(2)}{" "}
-                        <span className="text-xs text-gray-500">quincenal</span>
-                      </span>
-                    </button>
-                  ))
-                )}
+                {results.map((product) => (
+                  <button
+                    key={product.id}
+                    onClick={() => handleSelect(product.id)}
+                    className="w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-50 border-b border-gray-50 last:border-0 transition-colors"
+                    data-search-result
+                  >
+                    <img
+                      src={product.imagen}
+                      alt={product.nombre}
+                      className="w-10 h-10 rounded-lg object-cover"
+                    />
+                    <div className="text-left flex-1">
+                      <p className="text-xs font-medium text-gray-900">
+                        {product.nombre}
+                      </p>
+                      <p className="text-xs text-gray-400 capitalize">
+                        {product.categoria}
+                      </p>
+                    </div>
+                    <span className="text-sm text-gray-700">
+                      <span className="text-xs text-gray-500">Desde:</span>${" "}
+                      {product.precioDesde.toFixed(2)}{" "}
+                      <span className="text-xs text-gray-500">quincenal</span>
+                    </span>
+                  </button>
+                ))}
               </div>
             )}
           </div>
@@ -232,7 +234,7 @@ const Navbar = () => {
           <nav className="flex flex-col space-y-6">
             <Link
               href="/"
-              className="nav-link text-xl py-2"
+              className={navLinkMobileClass("/")}
               onClick={() => setIsOpen(false)}
             >
               Inicio
@@ -241,7 +243,7 @@ const Navbar = () => {
               <Link
                 key={category.id}
                 href={`/categoria/${category.id}`}
-                className="nav-link text-xl py-2"
+                className={navLinkMobileClass(`/categoria/${category.id}`)}
                 onClick={() => setIsOpen(false)}
               >
                 {category.nombre}
@@ -249,7 +251,7 @@ const Navbar = () => {
             ))}
             <Link
               href="/contacto"
-              className="nav-link text-xl py-2"
+              className={navLinkMobileClass("/contacto")}
               onClick={() => setIsOpen(false)}
             >
               Contacto
@@ -259,7 +261,7 @@ const Navbar = () => {
               className="text-brishop-500 pl-8 py-2"
               onClick={() => setIsOpen(false)}
             >
-              <FaHeart className="h-5 w-5 " />
+              <FaHeart className="h-5 w-5" />
             </Link>
           </nav>
         </div>

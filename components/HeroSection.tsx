@@ -7,25 +7,34 @@ import { FiArrowRight } from "react-icons/fi";
 
 const slides = [
   {
-    image: "https://images.pexels.com/photos/6044266/pexels-photo-6044266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imagen:
+      "https://images.pexels.com/photos/21897313/pexels-photo-21897313.jpeg?_gl=1*j08ekf*_ga*Njc5NjE5OTk4LjE3NzU5NzYxMTA.*_ga_8JE65Q40S6*czE3NzU5NzYxMTAkbzEkZzEkdDE3NzU5Nzc0ODQkajEyJGwwJGgw",
+    imagenMobile:
+      "https://images.pexels.com/photos/21897132/pexels-photo-21897132.jpeg?_gl=1*121io6j*_ga*Njc5NjE5OTk4LjE3NzU5NzYxMTA.*_ga_8JE65Q40S6*czE3NzU5NzYxMTAkbzEkZzEkdDE3NzU5Nzc4MzgkajYwJGwwJGgw",
     title: "Nueva Colección",
     subtitle: "Bolsas exclusivas",
     link: "/categoria/bolsas",
-    position: "right",
+    position: "left",
   },
   {
-    image: "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imagen:
+      "https://images.pexels.com/photos/11891660/pexels-photo-11891660.jpeg?_gl=1*1of8hcx*_ga*Njc5NjE5OTk4LjE3NzU5NzYxMTA.*_ga_8JE65Q40S6*czE3NzU5NzYxMTAkbzEkZzEkdDE3NzU5Nzk3MjUkajgkbDAkaDA.",
+    imagenMobile:
+      "https://images.pexels.com/photos/11891660/pexels-photo-11891660.jpeg?_gl=1*1of8hcx*_ga*Njc5NjE5OTk4LjE3NzU5NzYxMTA.*_ga_8JE65Q40S6*czE3NzU5NzYxMTAkbzEkZzEkdDE3NzU5Nzk3MjUkajgkbDAkaDA.",
     title: "Calzado de Temporada",
     subtitle: "Comodidad y estilo",
     link: "/categoria/calzado",
     position: "left",
   },
   {
-    image: "https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imagen:
+      "https://images.pexels.com/photos/22589377/pexels-photo-22589377.jpeg?_gl=1*pi6zqh*_ga*Njc5NjE5OTk4LjE3NzU5NzYxMTA.*_ga_8JE65Q40S6*czE3NzU5NzYxMTAkbzEkZzEkdDE3NzU5NzgzMjEkajMkbDAkaDA.",
+    imagenMobile:
+      "https://images.pexels.com/photos/22589349/pexels-photo-22589349.jpeg?_gl=1*59e0pv*_ga*Njc5NjE5OTk4LjE3NzU5NzYxMTA.*_ga_8JE65Q40S6*czE3NzU5NzYxMTAkbzEkZzEkdDE3NzU5NzgyODEkajQzJGwwJGgw",
     title: "Fragancias Exclusivas",
     subtitle: "Nueva colección de perfumes",
     link: "/categoria/perfumes",
-    position: "right",
+    position: "left",
   },
 ];
 
@@ -40,38 +49,47 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-[90vh] overflow-hidden pt-16">
+    <section className="relative w-full h-[100vh] overflow-hidden ">
       {slides.map((slide, index) => (
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-1000 ${
-            currentSlide === index ? "opacity-100" : "opacity-0"
+            currentSlide === index
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
           }`}
         >
           <div className="relative w-full h-full">
             <Image
-              src={slide.image}
+              src={slide.imagenMobile}
               alt={slide.title}
               fill
-              priority
               sizes="100vw"
-              className="object-cover"
+              priority
+              className="object-cover object-center md:hidden"
             />
-            <div className="absolute inset-0 bg-black/30" />
-            
-            <div className="absolute inset-0 flex items-center">
-              <div 
-                className={`container-custom text-white ${
-                  slide.position === "right" 
-                    ? "text-right ml-auto" 
+            {/* Desktop */}
+            <Image
+              src={slide.imagen}
+              alt={slide.title}
+              fill
+              sizes="100vw"
+              priority
+              className="object-cover object-center hidden md:block"
+            />
+            <div className="absolute inset-0 bg-black/40" />
+
+            <div className="absolute inset-0 flex items-center mx-auto px-4 sm:px-6 lg:px-8 ">
+              <div
+                className={`w-full text-white  ${
+                  slide.position === "right"
+                    ? "text-right ml-auto"
                     : "text-left mr-auto"
                 }`}
               >
-                <div 
+                <div
                   className={`max-w-md ${
-                    slide.position === "right" 
-                      ? "ml-auto" 
-                      : "mr-auto"
+                    slide.position 
                   }`}
                 >
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">

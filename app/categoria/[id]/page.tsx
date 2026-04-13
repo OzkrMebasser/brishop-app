@@ -42,7 +42,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   }
 
   return (
-    <div className="min-h-screen pt-16">
+    <div className="min-h-screen pt-0">
       <CategoryBanner category={category} />
       
       <section className="py-12 bg-white">
