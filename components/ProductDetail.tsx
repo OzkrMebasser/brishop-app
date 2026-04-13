@@ -21,7 +21,9 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
   }, [product.id]);
 
   const toggleLike = () => {
-    const favorites: string[] = JSON.parse(localStorage.getItem("favorites") || "[]");
+    const favorites: string[] = JSON.parse(
+      localStorage.getItem("favorites") || "[]",
+    );
     const updated = liked
       ? favorites.filter((id) => id !== product.id)
       : [...favorites, product.id];
@@ -75,7 +77,9 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
                   <button
                     onClick={toggleLike}
                     className="p-2 rounded-full border border-gray-200 hover:border-brishop-300 transition-colors"
-                    aria-label={liked ? "Quitar de favoritos" : "Añadir a favoritos"}
+                    aria-label={
+                      liked ? "Quitar de favoritos" : "Añadir a favoritos"
+                    }
                   >
                     {liked ? (
                       <FaHeart className="text-brishop-500" size={20} />
@@ -94,24 +98,36 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
               </div>
 
               <div className="flex items-center space-x-2 mb-4">
+                   {/* Nuevo */}
                 {product.nuevo && (
                   <span className="bg-brishop-500 text-white text-xs font-semibold px-2 py-1 rounded-md">
                     NUEVO
                   </span>
                 )}
+                   {/* Destacado */}
                 {product.destacado && (
                   <span className="bg-lilac-400 text-white text-xs font-semibold px-2 py-1 rounded-md">
                     DESTACADO
                   </span>
                 )}
+                   {/* Talla */}
+                   {product.talla && (
+                  <span className="bg-lilac-400 text-white text-xs font-semibold px-2 py-1 rounded-md">
+                    Talla: {product.talla}
+                  </span>
+                )}
               </div>
+           
+            
 
               {/* Precios */}
               <div className="flex flex-col gap-4 mb-6">
                 {/* Precio contado */}
                 <div className="flex items-center gap-3 p-3 bg-green-50 border border-green-100 rounded-lg">
                   <div>
-                    <p className="text-xs text-green-600 font-medium uppercase tracking-wide">Precio de contado</p>
+                    <p className="text-xs text-green-600 font-medium uppercase tracking-wide">
+                      Precio de contado
+                    </p>
                     <p className="text-2xl font-bold text-green-700">
                       {formatPrice(product.precioContado)}
                     </p>
@@ -121,7 +137,9 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
                 {/* Precio crédito */}
                 <div className="flex items-center gap-3 p-3 bg-brishop-50 border border-brishop-100 rounded-lg">
                   <div className="flex-1">
-                    <p className="text-xs text-brishop-600 font-medium uppercase tracking-wide">Precio a crédito</p>
+                    <p className="text-xs text-brishop-600 font-medium uppercase tracking-wide">
+                      Precio a crédito
+                    </p>
                     <p className="text-2xl font-bold text-brishop-800">
                       {formatPrice(product.precioCredito)}
                     </p>

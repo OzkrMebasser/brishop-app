@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@hookform/resolvers": "^3.9.0",
     "@next/swc-wasm-nodejs": "13.4.19",
     "@types/node": "20.6.2",

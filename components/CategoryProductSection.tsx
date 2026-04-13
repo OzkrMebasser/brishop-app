@@ -13,19 +13,25 @@ export default function CategoryProductSection({ products }: { products: Product
   const [marcaActiva, setMarcaActiva] = useState<string | null>(null);
   const [subCatActiva, setSubCatActiva] = useState<string | null>(null);
   const [sexoActivo, setSexoActivo] = useState<string | null>(null);
+  const [tallaActiva, setTallaActiva] = useState<string | null>(null);
 
   const marcas = useMemo(() => [...new Set(products.map((p) => p.marca))], [products]);
   const subCategorias = useMemo(() => [...new Set(products.map((p) => p.subCategoria))], [products]);
   const sexos = useMemo(() => [...new Set(products.map((p) => p.sexo))], [products]);
+const tallas = useMemo(() => {
+  const todas = products.map((p) => p.talla).filter(Boolean) as string[];
+  return [...new Set(todas)].sort((a, b) => parseFloat(a) - parseFloat(b));
+}, [products]);
 
   const filtrados = useMemo(() => {
     return products.filter((p) => {
       const porMarca = marcaActiva ? p.marca === marcaActiva : true;
       const porSub = subCatActiva ? p.subCategoria === subCatActiva : true;
       const porSexo = sexoActivo ? p.sexo === sexoActivo : true;
-      return porMarca && porSub && porSexo;
+      const porTalla = tallaActiva ? p.talla === tallaActiva : true;
+      return porMarca && porSub && porSexo && porTalla;
     });
-  }, [products, marcaActiva, subCatActiva, sexoActivo]);
+  }, [products, marcaActiva, subCatActiva, sexoActivo, tallaActiva]);
 
   return (
     <div className="space-y-6">
@@ -55,6 +61,20 @@ export default function CategoryProductSection({ products }: { products: Product
               <button key={sub} onClick={() => setSubCatActiva(subCatActiva === sub ? null : sub)}
                 className={`${btnBase} ${subCatActiva === sub ? btnActivo : btnInactivo}`}>
                 {sub}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Talla */}
+        {tallas.length > 1 && (
+          <div className="flex flex-wrap gap-2 items-center">
+            <span className="text-xs text-gray-400 uppercase tracking-wide w-full sm:w-auto">Talla</span>
+            <button onClick={() => setTallaActiva(null)} className={`${btnBase} ${tallaActiva === null ? btnActivo : btnInactivo}`}>Todas</button>
+            {tallas.map((talla) => (
+              <button key={talla} onClick={() => setTallaActiva(tallaActiva === talla ? null : talla)}
+                className={`${btnBase} ${tallaActiva === talla ? btnActivo : btnInactivo}`}>
+                {talla}
               </button>
             ))}
           </div>

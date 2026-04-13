@@ -6,7 +6,6 @@ import { categories } from "@/data/categories";
 const LogoBrishop =
   "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/brishop-ecommerce%2FLOGO-brishop-horizontal.png?alt=media&token=851e2ab6-4510-4415-a2fc-07c5410999c0";
 
-
 const Footer = () => {
   return (
     <footer className="bg-white pt-16 pb-8 border-t border-gray-100">
@@ -26,30 +25,31 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-gray-600 mb-6">
-              Tu tienda en línea para encontrar productos de moda y estilo con la mejor calidad.
+              Tu tienda en línea para encontrar productos de moda y estilo con
+              la mejor calidad.
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.instagram.com/brishop.tienda.online"
                 className="text-gray-500 hover:text-brishop-600 transition-colors"
                 aria-label="Instagram"
               >
                 <FiInstagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/people/Brishop/61575576121514/"
                 className="text-gray-500 hover:text-brishop-600 transition-colors"
                 aria-label="Facebook"
               >
                 <FiFacebook size={20} />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-500 hover:text-brishop-600 transition-colors"
                 aria-label="Twitter"
               >
                 <FiTwitter size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -74,14 +74,14 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-medium mb-4">Enlaces</h4>
             <ul className="space-y-2">
-              <li>
+              {/* <li>
                 <Link
                   href="/sobrenosotros"
                   className="text-gray-600 hover:text-brishop-600 transition-colors"
                 >
                   Sobre nosotros
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/contacto"
@@ -98,14 +98,14 @@ const Footer = () => {
                   Política de Privacidad
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/terminos-y-condiciones"
                   className="text-gray-600 hover:text-brishop-600 transition-colors"
                 >
                   Términos y Condiciones
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -113,21 +113,23 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-medium mb-4">Contacto</h4>
             <address className="not-italic text-gray-600 space-y-2">
-              <p>La Pasion BCS, México</p>
+              <p>La Paz, BCS, México</p>
               <p>
                 <a
-                  href="tel:+525512345678"
+                  href="https://wa.me/5216121376977"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-brishop-600 transition-colors"
                 >
-                  +52 612 345 6789
+                  WhatsApp
                 </a>
               </p>
               <p>
                 <a
-                  href="mailto:info@brishop.com"
+                  href="mailto:brisamoreno85@gmail.com"
                   className="hover:text-brishop-600 transition-colors flex items-center"
                 >
-                  <FiMail className="mr-2" /> labrisona@brishop.com
+                  <FiMail className="mr-2" /> Correo electrónico
                 </a>
               </p>
             </address>
@@ -135,7 +137,10 @@ const Footer = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-gray-100 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} BRISHOP. Todos los derechos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} BRISHOP. Todos los derechos
+            reservados.
+          </p>
         </div>
       </div>
     </footer>
