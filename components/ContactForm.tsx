@@ -43,9 +43,28 @@ const ContactForm = ({ selectedProductId }: ContactFormProps) => {
   }, [selectedProductId]);
 
   // Actualiza el mensaje automático cuando cambia la lista de productos
+  // useEffect(() => {
+  //   if (selectedProducts.length > 0) {
+  //     const lista = selectedProducts.map((p) => `"${p.nombre}"`).join(", ");
+  //     setFormData((prev) => ({
+  //       ...prev,
+  //       mensaje: `Hola, estoy interesado/a en los productos: ${lista}. Me gustaría obtener más información.`,
+  //     }));
+  //   } else {
+  //     setFormData((prev) => ({ ...prev, mensaje: "" }));
+  //   }
+  // }, [selectedProducts]);
+  // Actualiza el mensaje automático cuando cambia la lista de productos
   useEffect(() => {
     if (selectedProducts.length > 0) {
-      const lista = selectedProducts.map((p) => `"${p.nombre}"`).join(", ");
+      const lista = selectedProducts
+        .map((p) => {
+          if (p.enOferta && p.precioOferta) {
+            return `"${p.nombre}" (¡EN OFERTA! Precio especial: $${p.precioOferta} MXN)`;
+          }
+          return `"${p.nombre}"`;
+        })
+        .join(", ");
       setFormData((prev) => ({
         ...prev,
         mensaje: `Hola, estoy interesado/a en los productos: ${lista}. Me gustaría obtener más información.`,
@@ -230,13 +249,32 @@ const ContactForm = ({ selectedProductId }: ContactFormProps) => {
                       alt={product.nombre}
                       className="w-16 h-16 object-cover rounded-md flex-shrink-0"
                     />
-                    <div className="flex-1 min-w-0">
+                    {/* <div className="flex-1 min-w-0">
                       <p className="font-medium text-gray-900 text-sm truncate">
                         {product.nombre}
                       </p>
                       <p className="text-sm text-gray-500">
                         Desde ${product.precioDesde} quincenal
                       </p>
+                    </div> */}
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-gray-900 text-sm truncate">
+                        {product.nombre}
+                      </p>
+                      {product.enOferta && product.precioOferta ? (
+                        <div className="flex items-center gap-2">
+                          <p className="text-sm text-red-500 font-semibold">
+                            🔥 Oferta: ${product.precioOferta}
+                          </p>
+                          <p className="text-xs text-gray-400 line-through">
+                            ${product.precioDesde} quincenal
+                          </p>
+                        </div>
+                      ) : (
+                        <p className="text-sm text-gray-500">
+                          Desde ${product.precioDesde} quincenal
+                        </p>
+                      )}
                     </div>
                     <button
                       type="button"

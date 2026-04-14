@@ -14,6 +14,7 @@ export interface Product {
   id: string;
   nombre: string;
   imagen: string;
+  imagenes?: string[];
   descripcion: string;
   precioContado: number;
   precioCredito: number;
@@ -26,6 +27,8 @@ export interface Product {
   destacado?: boolean;
   nuevo?: boolean;
   talla?: string;
+  enOferta?: boolean;
+  precioOferta?: number;
 }
 
 type RawProduct = Omit<Product, "id" | "abonos" | "precioDesde">;
@@ -33,6 +36,468 @@ type RawProduct = Omit<Product, "id" | "abonos" | "precioDesde">;
 const rawProducts: RawProduct[] = [
   // Bolsas
 
+  {
+    nombre: "Bolsa Aldo Mellowbag Negra Satchel",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776117812/01-bolsa-aldo-frente_vpakcl.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776117812/01-bolsa-aldo-frente_vpakcl.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776117823/02-Bolsa-Aldo-lado_qm9g7p.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776126670/03-bolsa-aldo-Aldo-Mellowbag-Negra-Satchel_tdsxyj.webp",
+    ],
+    descripcion:
+      "Eleva tu estilo con la Aldo Mellowbag. Su diseño estructurado en negro con herrajes dorados es el balance perfecto entre elegancia y modernidad. Incluye un exclusivo mini monedero removible, ideal para la mujer que desea lucir esenciales siempre con estilo. ¡La pieza clave que te faltaba a tu look!",
+    precioContado: 1200,
+    precioCredito: 1499,
+    categoria: "bolsas",
+    marca: "Aldo",
+    sexo: "dama",
+    subCategoria: "satchel",
+  },
+  {
+    nombre: "Bolsa Aldo Baander Negra",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776118351/01-Bolsa-Aldo-Baander-Negra-frente_kejl8o.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776118351/01-Bolsa-Aldo-Baander-Negra-frente_kejl8o.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776118357/02-Bolsa-Aldo-Baander-Negra-colgada_pxnwqh.jpg",
+    ],
+    descripcion:
+      "Lujo minimalista para el día a día. Menos es más con la bolsa Aldo Baander. Su silueta tipo hobo es fluida, moderna y sumamente sofisticada. El toque de distinción lo da su icónica cadena dorada, que aporta el brille justo a tu outfit.",
+    precioContado: 1500,
+    precioCredito: 1800,
+    categoria: "bolsas",
+    marca: "Aldo",
+    sexo: "dama",
+    subCategoria: "Hobo",
+  },
+  {
+    nombre: "Bolsa Aldo Paltani Negra",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776118625/01-Bolsa-Aldo-Pattani-Negra-Cebra-Frente_mnblfv.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776118625/01-Bolsa-Aldo-Pattani-Negra-Cebra-Frente_mnblfv.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776118631/02-Bolsa-Aldo-Pattani-Negra-Cebra-adentro_egdq4v.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776118635/03-Bolsa-Aldo-Pattani-Negra-Cebra-colgada_if0rhx.jpg",
+    ],
+    descripcion:
+      "Lleva tu look al siguiente nivel con el balance perfecto entre sofisticación y funcionalidad. La Aldo Paltani presenta una estructura sofisticada y ultra espaciosa con un toque audaz: un pouch de cebra desmontable que marca la diferencia. Ideal para la mujer moderna que busca funcionalidad sin sacrificar el estilo. ¡Hazlo tu básico favorito hoy mismo!",
+    precioContado: 1500,
+    precioCredito: 1800,
+    categoria: "bolsas",
+    marca: "Aldo",
+    sexo: "dama",
+    subCategoria: "tote",
+  },
+  {
+    nombre: "Bolsa Guess Speranza Carryall Chocolate",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776121690/04-Bolsa_Guess_Speranza_Carryall_Chocolate-1_cqmneo.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776121690/04-Bolsa_Guess_Speranza_Carryall_Chocolate-1_cqmneo.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776121691/04-Bolsa_Guess_Speranza_Carryall_Chocolate-2_a51gdq.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776121693/04-Bolsa_Guess_Speranza_Carryall_Chocolate-3_i8y4wx.webp",
+    ],
+    descripcion:
+      "Este elegante bolso tote carryall Guess en tono chocolate destaca por su diseño estructurado y funcional. Cuenta con un amplio espacio interior de triple compartimiento y, para mayor versatilidad, incluye una correa ajustable y removible que le permite transformarlo fácilmente en un práctico crossbody.",
+    precioContado: 2400,
+    precioCredito: 2800,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "tote",
+  },
+  {
+    nombre: "Bolsa Guess Speranza Carryall Marino",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776123012/05-Bolsa-Guess-Speranza-Carryall-Marino-1_aj4bzp.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776123012/05-Bolsa-Guess-Speranza-Carryall-Marino-1_aj4bzp.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776123016/05-Bolsa-Guess-Speranza-Carryall-Marino-2_y44bem.webp",
+    ],
+    descripcion:
+      "Bolso tote carryall Guess azul marino con diseño estructurado y funcional. Cuenta con amplio espacio de triple compartimiento, organización perfecta e incluye una correa ajustable y removible para usarlo cómodamente como crossbody.",
+    precioContado: 2400,
+    precioCredito: 2800,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "tote",
+  },
+  {
+    nombre: "Bolsa Guess Avon Paris Caramel",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776123742/06-Bolsa-Guess-Avon-Park-Caramel-1_f25jrx.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776123742/06-Bolsa-Guess-Avon-Park-Caramel-1_f25jrx.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776123744/06-Bolsa-Guess-Avon-Park-Caramel-2_q4pjxv.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776123746/06-Bolsa-Guess-Avon-Park-Caramel-3_vrabfj.webp",
+    ],
+    descripcion:
+      "Es la pieza clave para un estilo sofisticado. Su diseño estructurado en tono caramel es impecable y personal. Incluye una correa removible, permitiéndote llevarlo cómodamente como crossbody según tu outfit.",
+    precioContado: 2400,
+    precioCredito: 2800,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "tote",
+  },
+
+  //nuevos
+  {
+    nombre: "Bolsa Guess Nude/Taupe",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776124617/07-Bolsa-Guess-Nude-Taupe_ztinga.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776124617/07-Bolsa-Guess-Nude-Taupe_ztinga.jpg",
+    ],
+    descripcion:
+      "Esta bolsa Guess Los Angeles en color nude/taupe es la definición de elegancia funcional. Su diseño estructurado y el acabado en textura Saffiano la hacen ver increíblemente lujosa y profesional.",
+    precioContado: 2200,
+    precioCredito: 2599,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "tote",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Guess modelo Oona Logo Top-Zip blanco",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776125544/08-Bolsa-Guess-modelo-Oona-Logo-Top-Zip-blanco-1_gfcd3x.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776125544/08-Bolsa-Guess-modelo-Oona-Logo-Top-Zip-blanco-1_gfcd3x.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776125541/08-Bolsa-Guess-modelo-Oona-Logo-Top-Zip-blanco-2_hrzznr.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776125541/08-Bolsa-Guess-modelo-Oona-Logo-Top-Zip-blanco-3_njnvfy.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776125543/08-Bolsa-Guess-modelo-Oona-Logo-Top-Zip-blanco-4_l3lqrp.jpg",
+    ],
+    descripcion:
+      "Eleva tu look diario con la espectacular Guess Oona Crossbody. Su diseño en blanco impecable con logotipos ampliados y herrajes dorados aporta una sofisticación única a cualquier outfit. Incluye un portamonedas removible y una correa ajustable diseñada para tu comodidad.",
+    precioContado: 1250,
+    precioCredito: 1500,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa DKNY Willa Satchel Bag",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776125968/09-Bolsa-DKNY-Willa-Satchel-Bag-1_vsfias.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776125968/09-Bolsa-DKNY-Willa-Satchel-Bag-1_vsfias.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776125971/09-Bolsa-DKNY-Willa-Satchel-Bag-2_p9luyg.webp",
+    ],
+    descripcion:
+      "Eleva tu día a día con el icónico Willa Satchel. Su diseño de líneas suaves y cuero granulado premium captura la energía moderna de Nueva York. Con un tono café cálido (Hot Cocoa) y herrajes plateados, es el balance perfecto entre lo clásico y lo contemporáneo. ¡La pieza que no sabía que le faltaba a tu outfit!",
+    precioContado: 2200,
+    precioCredito: 2599,
+    categoria: "bolsas",
+    marca: "Dkny",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden Donegal Negra",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776126799/10-Bolsa-Steve-Madden-Donegal-Negra-2_t4bbpa.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776126799/10-Bolsa-Steve-Madden-Donegal-Negra-2_t4bbpa.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776126803/10-Bolsa-Steve-Madden-Donegal-Negra-1_kpoysr.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776126801/10-Bolsa-Steve-Madden-Donegal-Negra-3_jsxvhh.webp",
+    ],
+    descripcion:
+      "Descubre la sofisticación del modelo Donegal Satchel de Steve Madden. Su diseño estructurado en color negro profundo y los herrajes oscuros tipo gunmetal crean un look minimalista y ultra moderno.",
+    precioContado: 2400,
+    precioCredito: 2750,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Aldo Auraliee Print Mini",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776127324/11-Bolsa-Aldo-Auraliee-Print-Mini_i6bjba.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776127324/11-Bolsa-Aldo-Auraliee-Print-Mini_i6bjba.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776127334/11-Bolsa-Aldo-Auraliee-Print-Mini-2_gcsw1s.webp",
+    ],
+    descripcion:
+      "Eleva cualquier outfit básico con la impresionante bolsa Auraliee. Su estampado de cebra en tonos tierra y negro es la dosis perfecta de audacia para tu clóset. Incluye un mini charm removible que le da ese toque moderno y único que solo Aldo sabe ofrecer. ¡El accesorio ideal para la mujer que no teme destacar!",
+    precioContado: 1200,
+    precioCredito: 1500,
+    categoria: "bolsas",
+    marca: "Aldo",
+    sexo: "dama",
+    subCategoria: "tote",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Bungalows Aldo Blanca",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776127679/12-Bungalows-Shoulder-Bag-1_sx4zjn.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776127679/12-Bungalows-Shoulder-Bag-1_sx4zjn.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776127682/12-Bungalows-Shoulder-Bag-2_p7ncft.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776127680/12-Bungalows-Shoulder-Bag-3_lh78ea.jpg",
+    ],
+    descripcion:
+      "Descubre el balance perfecto entre funcionalidad y alta moda. Esta bolsa de hombro destaca por su diseño vanguardista y su capacidad para adaptarse a cualquier estilo, desde unos jeans casuales hasta un vestido de noche.",
+    precioContado: 1500,
+    precioCredito: 1750,
+    categoria: "bolsas",
+    marca: "Aldo",
+    sexo: "dama",
+    subCategoria: "Shoulder",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Aldo Auralie Mini Satchel",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776128114/13-Bolsa-Aldo-Auraliee-1_xv0y20.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776128114/13-Bolsa-Aldo-Auraliee-1_xv0y20.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776128072/13-Bolsa-Aldo-Auraliee-2_gl5f7t.webp",
+    ],
+    descripcion:
+      "Eleva tu look al instante con la impresionante bolsa Auralie. Su acabado en textura de cocodrilo color negro brillante es la personificación del lujo moderno. Incluye un mini charm removible que le da ese toque vanguardista y único que solo Aldo puede ofrecer. ¡Sofisticada, estructurada y lista para ser la protagonista de tu outfit!",
+    precioContado: 1200,
+    precioCredito: 1500,
+    categoria: "bolsas",
+    marca: "Aldo",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden en color borgoña",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776130882/14-Bolsa-Steve-Madden-Caballito_wrklc8.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776130882/14-Bolsa-Steve-Madden-Caballito_wrklc8.jpg",
+    ],
+    descripcion:
+      "Eleva tu look al instante con esta impresionante bolsa Steve Madden. Su tono vino profundo y los detalles dorados, incluyendo el icónico dije de caballito, crean un aire de sofisticación ecuestre único. Es el accesorio perfecto para quienes buscan destacar con un estilo clásico, lujoso y lleno de personalidad. ¡Un sueño hecho bolso!",
+    precioContado: 2200,
+    precioCredito: 2499,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: true,
+    precioOferta: 1499,
+  },
+  {
+    nombre: "Mochila Tommy Hilfiger Holograma Beige",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776131750/15-Mochila-Tommy-Hilfiger-Holograma-Beige-1_ielx9n.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776131750/15-Mochila-Tommy-Hilfiger-Holograma-Beige-1_ielx9n.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776131748/15-Mochila-Tommy-Hilfiger-Holograma-Beige-2_sxowmb.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776131747/15-Mochila-Tommy-Hilfiger-Holograma-Beige-3_ylalu4.webp",
+    ],
+    descripcion:
+      "Añade un básico de alta gama a tu colección con este diseño urbano y moderno. Esta mochila combina una estructura práctica con acabados premium para mantener tus pertenencias organizadas con mucho estilo.",
+    precioContado: 1500,
+    precioCredito: 1850,
+    categoria: "bolsas",
+    marca: "Tommy Hilfiger",
+    sexo: "dama",
+    subCategoria: "backpack",
+    enOferta: true,
+    precioOferta: 1250,
+  },
+  {
+    nombre: "Bolsa Steve Madden Bkyre Nautica",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776133832/16-Bolsa-Steve-Madden-Bkyre-Nautica-1_eg9ya2.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776133832/16-Bolsa-Steve-Madden-Bkyre-Nautica-1_eg9ya2.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776133833/16-Bolsa-Steve-Madden-Bkyre-Nautica-2_i0bkoj.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776133835/16-Bolsa-Steve-Madden-Bkyre-Nautica-3_rbwazh.jpg",
+    ],
+    descripcion:
+      "Eleva tu look de temporada con esta espectacular bolsa Steve Madden. Su combinación de lona en tono crema y bordes azul marino con costuras en contraste le da un aire sofisticado y fresco. Nota: El llavero de frutas es únicamente ilustrativo (no incluido).",
+    precioContado: 1250,
+    precioCredito: 1550,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden BKandice",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776135192/17-BolsaSteve-Madden-BKandice-1_v9vt4o.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776135192/17-BolsaSteve-Madden-BKandice-1_v9vt4o.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776135193/17-BolsaSteve-Madden-BKandice-2_woyd45.jpg",
+    ],
+    descripcion:
+      "Enamórate de la versión mini del modelo BKandice de Steve Madden. Este bolso estructurado es la pieza maestra que le falta a tu clóset. Su combinación de blanco crema y café chocolate, rematada con ese imponente herraje metálico, proyecta un estilo de lujo total. Es pequeña, compacta y ultra sofisticada. ¡El accesorio perfecto para tus fotos de impacto!",
+    precioContado: 1200,
+    precioCredito: 1499,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Tommy Hilfiger Popette Mini Tote",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776136426/18-Bolsa-Tommy-Hilfiger-Popette-Mini-Tote_rpguwp.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776136426/18-Bolsa-Tommy-Hilfiger-Popette-Mini-Tote_rpguwp.jpg",
+    ],
+    descripcion:
+      "Redefine tu look diario con este sofisticado bolso Tommy Hilfiger. Su diseño de rayas verticales en tonos crema y café, complementado con el icónico monograma dorado \"TH\" y acabados en piel sintética, aporta un aire de lujo atemporal a cualquier outfit.",
+    precioContado: 1300,
+    precioCredito: 1650,
+    categoria: "bolsas",
+    marca: "Tommy Hilfiger",
+    sexo: "dama",
+    subCategoria: "tote",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Nine West Lona",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776136921/19-Bolsa-Nine-West-Lona-1_qcedom.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776136921/19-Bolsa-Nine-West-Lona-1_qcedom.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776136924/19-Bolsa-Nine-West-Lona-2_mwzvz1.jpg",
+    ],
+    descripcion:
+      "Dale un respiro a tu look con esta espectacular bolsa Nine West. Su diseño combina la frescura de la lona beige con acabados premium en tono caramelo, creando un aire de lujo relajado. Incluye un charm de flor en contraste que le da ese toque femenino y único. ¡La pieza clave para tus outfits de temporada!",
+    precioContado: 1500,
+    precioCredito: 1850,
+    categoria: "bolsas",
+    marca: "Nine West",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Tommy Hilfiger Kinley II",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776137574/20-Bolsa-Tommy-Hilfiger-Kinley-I_cbpnmt.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776137574/20-Bolsa-Tommy-Hilfiger-Kinley-I_cbpnmt.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776137570/20-Bolsa-Tommy-Hilfiger-Kinley-2_ucrgtr.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776137572/20-Bolsa-Tommy-Hilfiger-Kinley-3_xjupjr.jpg",
+    ],
+    descripcion:
+      "Eleva tu estilo diario con esta sofisticada bolsa crossbody original. Su diseño destaca por el icónico patrón de monograma \"TH\" en tonos crema y beige, enmarcado por elegantes bordes en color miel.",
+    precioContado: 1300,
+    precioCredito: 1650,
+    categoria: "bolsas",
+    marca: "Tommy Hilfiger",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+
+  // 21
+  {
+    nombre: "Bolso Tommy Hilfiger Satchel Azul Marino",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776139361/21-Bolso-Tommy-Hilfiger-Satchel-Azul-Marino-1_tgdabw.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776139361/21-Bolso-Tommy-Hilfiger-Satchel-Azul-Marino-1_tgdabw.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776139359/21-Bolso-Tommy-Hilfiger-Satchel-Azul-Marino-2_uvnpfc.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776139364/21-Bolso-Tommy-Hilfiger-Satchel-Azul-Marino-3_w1ihce.jpg",
+    ],
+    descripcion:
+      "Eleva tu estilo diario con este impresionante bolso Satchel de Tommy Hilfiger. Su diseño estructurado en el icónico tono Space Blue y el herraje metálico con el monograma \"TH\" en dorado son la personificación del lujo atemporal.",
+    precioContado: 1500,
+    precioCredito: 1850,
+    categoria: "bolsas",
+    marca: "Tommy Hilfiger",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  // 22
+  {
+    nombre: "Bolsa Karl Lagerfeld Maybelle Phone Crossbody",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776140243/22-Bolsa-Karl-Lagerfeld-Maybelle-Phone-Crossbody-1_as99j7.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776140243/22-Bolsa-Karl-Lagerfeld-Maybelle-Phone-Crossbody-1_as99j7.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776140237/22-Bolsa-Karl-Lagerfeld-Maybelle-Phone-Crossbody-2_rkmylk.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776140240/22-Bolsa-Karl-Lagerfeld-Maybelle-Phone-Crossbody-4_muthdr.jpg",
+    ],
+    descripcion:
+      "Haz una declaración de moda con esta espectacular crossbody de Karl Lagerfeld. Su diseño en mezclilla azul premium destaca por las icónicas figuras de Karl y su inseparable gatita Choupette.",
+    precioContado: 2600,
+    precioCredito: 2999,
+    categoria: "bolsas",
+    marca: "Karl Lagerfeld",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  // 23
+  {
+    nombre: "Bolsa Karl Lagerfeld Paris Voyage Messenger",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776140676/23-Bolsa-Karl-Lagerfeld-Paris-Voyage-Messenger-1_mfcvvu.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776140676/23-Bolsa-Karl-Lagerfeld-Paris-Voyage-Messenger-1_mfcvvu.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776140671/23-Bolsa-Karl-Lagerfeld-Paris-Voyage-Messenger-2_xxqj8q.jpg",
+    ],
+    descripcion:
+      "Eleva tu look diario con esta espectacular bolsa messenger original. Su diseño capitonado en color negro profundo y el imponente logotipo metálico de Karl Lagerfeld Paris aportan una dosis instantánea de lujo y elegancia.",
+    precioContado: 2600,
+    precioCredito: 2999,
+    categoria: "bolsas",
+    marca: "Karl Lagerfeld",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  // 24
+  {
+    nombre: "Bolso Karl Lagerfeld Maybelle Choupette",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776141127/24-Bolso-Karl-Lagerfeld-Maybelle-Choupette-1_ypjpeo.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776141127/24-Bolso-Karl-Lagerfeld-Maybelle-Choupette-1_ypjpeo.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776141131/24-Bolso-Karl-Lagerfeld-Maybelle-Choupette-2_yxytdi.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776141136/24-Bolso-Karl-Lagerfeld-Maybelle-Choupette-3_ogvwlp.jpg",
+    ],
+    descripcion:
+      "Eleva tu estilo al nivel de las pasarelas con la espectacular Maybelle Satchel de Karl Lagerfeld. Este bolso negro estructurado es una verdadera obra de arte, adornado con pines metálicos icónicos: desde la Torre Eiffel y el Arco del Triunfo hasta el propio Karl y su inseparable Choupette.",
+    precioContado: 3000,
+    precioCredito: 3599,
+    categoria: "bolsas",
+    marca: "Karl Lagerfeld",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: false,
+    precioOferta: 0,
+  },
   // Perfumes Caballero
   {
     nombre: "Guess Seductive Homme Blue",
@@ -87,7 +552,6 @@ const rawProducts: RawProduct[] = [
     marca: "Nautica",
     sexo: "caballero",
     subCategoria: "Amaderada",
-   
   },
   {
     nombre: "Salvatore Ferragamo Acqua Essenziale",
@@ -1194,7 +1658,7 @@ const rawProducts: RawProduct[] = [
     marca: "Columbia",
     sexo: "caballero",
     subCategoria: "Gorras",
-     destacado: true,
+    destacado: true,
   },
   {
     nombre: "Gorra Columbia, modelo Snapback Trucker Color Durazno",

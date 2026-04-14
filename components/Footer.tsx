@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FiInstagram, FiFacebook, FiTwitter, FiMail } from "react-icons/fi";
 import { categories } from "@/data/categories";
+import { BiSolidOffer } from "react-icons/bi";
 
 const LogoBrishop =
   "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/brishop-ecommerce%2FLOGO-brishop-horizontal.png?alt=media&token=851e2ab6-4510-4415-a2fc-07c5410999c0";
@@ -88,6 +89,14 @@ const Footer = () => {
                   className="text-gray-600 hover:text-brishop-600 transition-colors"
                 >
                   Contacto
+                </Link>
+              </li>
+               <li>
+                <Link
+                  href="/ofertas"
+                  className="text-gray-600 hover:text-brishop-600 transition-colors"
+                >
+                  Ofertas <BiSolidOffer className="inline-block ml-0 text-red-500 animate-pulse" size={16} />
                 </Link>
               </li>
               <li>

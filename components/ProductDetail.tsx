@@ -6,6 +6,9 @@ import Link from "next/link";
 import { FiShare2 } from "react-icons/fi";
 import { FiHeart } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/image-gallery.css";
+import type { GalleryItem } from "react-image-gallery";
 import { Product } from "@/data/products";
 
 interface ProductDetailProps {
@@ -14,6 +17,7 @@ interface ProductDetailProps {
 
 const ProductDetail = ({ product }: ProductDetailProps) => {
   const [liked, setLiked] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
     const favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
@@ -50,21 +54,52 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
     }
   };
 
+  const galleryItems: GalleryItem[] | null =
+    product.imagenes && product.imagenes.length > 0
+      ? product.imagenes.map((url) => ({
+          original: url,
+          thumbnail: url,
+        }))
+      : null;
+
   return (
     <section className="bg-white py-12">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {/* Product Image */}
-          <div className="relative overflow-hidden rounded-lg shadow-md aspect-square">
-            <Image
-              src={product.imagen}
-              alt={product.nombre}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
-              className="object-cover"
-            />
-          </div>
+          {/* Product Image / Gallery */}
+          {galleryItems ? (
+            <div className="relative square-gallery rounded-lg shadow-md overflow-hidden">
+              {product.enOferta && (
+                <div className="absolute top-6 -left-8 w-36 z-10 bg-red-500 text-white text-xs font-bold text-center py-1 rotate-[-45deg] shadow-md pointer-events-none">
+                  ¡En Oferta!
+                </div>
+              )}
+              <ImageGallery
+                items={galleryItems}
+                showPlayButton={false}
+                showNav={true}
+                thumbnailPosition={isFullscreen ? "bottom" : "bottom"}
+                onScreenChange={(fullscreen) => setIsFullscreen(fullscreen)}
+                lazyLoad={true}
+              />
+            </div>
+          ) : (
+            <div className="relative overflow-hidden rounded-lg shadow-md aspect-square">
+              {product.enOferta && (
+                <div className="absolute top-6 -left-8 w-36 z-10 bg-red-500 text-white text-xs font-bold text-center py-1 rotate-[-45deg] shadow-md pointer-events-none">
+                  ¡En Oferta!
+                </div>
+              )}
+              <Image
+                src={product.imagen}
+                alt={product.nombre}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+                className="object-cover"
+              />
+            </div>
+          )}
 
           {/* Product Details */}
           <div className="flex flex-col">
@@ -98,55 +133,55 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
               </div>
 
               <div className="flex items-center space-x-2 mb-4">
-                   {/* Nuevo */}
                 {product.nuevo && (
                   <span className="bg-brishop-500 text-white text-xs font-semibold px-2 py-1 rounded-md">
                     NUEVO
                   </span>
                 )}
-                   {/* Destacado */}
                 {product.destacado && (
                   <span className="bg-lilac-400 text-white text-xs font-semibold px-2 py-1 rounded-md">
                     DESTACADO
                   </span>
                 )}
-                   {/* Talla */}
-                   {product.talla && (
+                {product.talla && (
                   <span className="bg-lilac-400 text-white text-xs font-semibold px-2 py-1 rounded-md">
                     Talla: {product.talla}
                   </span>
                 )}
+                {product.enOferta && (
+                  <span className="bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded-md">
+                    ¡EN OFERTA!
+                  </span>
+                )}
               </div>
-           
-            
 
               {/* Precios */}
               <div className="flex flex-col gap-4 mb-6">
                 {/* Precio contado */}
-                <div className="flex items-center gap-3 p-3 bg-green-50 border border-green-100 rounded-lg">
+                <div className={`flex items-center gap-3 p-3 rounded-lg border ${product.enOferta ? "bg-gray-50 border-gray-100 opacity-60" : "bg-green-50 border-green-100"}`}>
                   <div>
-                    <p className="text-xs text-green-600 font-medium uppercase tracking-wide">
+                    <p className={`text-xs font-medium uppercase tracking-wide ${product.enOferta ? "text-gray-400" : "text-green-600"}`}>
                       Precio de contado
                     </p>
-                    <p className="text-2xl font-bold text-green-700">
+                    <p className={`text-2xl font-bold ${product.enOferta ? "text-gray-400 line-through" : "text-green-700"}`}>
                       {formatPrice(product.precioContado)}
                     </p>
                   </div>
                 </div>
 
                 {/* Precio crédito */}
-                <div className="flex items-center gap-3 p-3 bg-brishop-50 border border-brishop-100 rounded-lg">
+                <div className={`flex items-center gap-3 p-3 rounded-lg border ${product.enOferta ? "bg-gray-50 border-gray-100 opacity-60" : "bg-brishop-50 border-brishop-100"}`}>
                   <div className="flex-1">
-                    <p className="text-xs text-brishop-600 font-medium uppercase tracking-wide">
+                    <p className={`text-xs font-medium uppercase tracking-wide ${product.enOferta ? "text-gray-400" : "text-brishop-600"}`}>
                       Precio a crédito
                     </p>
-                    <p className="text-2xl font-bold text-brishop-800">
+                    <p className={`text-2xl font-bold ${product.enOferta ? "text-gray-400 line-through" : "text-brishop-800"}`}>
                       {formatPrice(product.precioCredito)}
                     </p>
                   </div>
-                  <div className="text-right border-l border-brishop-100 pl-3">
+                  <div className={`text-right border-l pl-3 ${product.enOferta ? "border-gray-100" : "border-brishop-100"}`}>
                     <p className="text-xs text-gray-400">Desde</p>
-                    <p className="text-2xl font-bold text-brishop-800">
+                    <p className={`text-2xl font-bold ${product.enOferta ? "text-gray-400 line-through" : "text-brishop-800"}`}>
                       {formatPrice(product.precioDesde)}
                     </p>
                     <p className="text-xs text-gray-400">
@@ -154,6 +189,23 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
                     </p>
                   </div>
                 </div>
+
+                {/* Precio oferta */}
+                {product.enOferta && product.precioOferta && (
+                  <div className="flex items-center gap-3 p-3 bg-red-50 border border-red-200 rounded-lg">
+                    <div>
+                      <p className="text-xs text-red-600 font-medium uppercase tracking-wide">
+                        🔥 Precio de oferta
+                      </p>
+                      <p className="text-3xl font-bold text-red-600">
+                        {formatPrice(product.precioOferta)}
+                      </p>
+                      <p className="text-xs text-red-400 mt-1">
+                        Precio especial por tiempo limitado
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
 
               <p className="text-gray-600 mb-8">{product.descripcion}</p>

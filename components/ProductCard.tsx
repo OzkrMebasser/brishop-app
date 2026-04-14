@@ -23,7 +23,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
   }, [product.id]);
 
   const toggleLike = () => {
-    const favorites: string[] = JSON.parse(localStorage.getItem("favorites") || "[]");
+    const favorites: string[] = JSON.parse(
+      localStorage.getItem("favorites") || "[]",
+    );
     const updated = liked
       ? favorites.filter((id) => id !== product.id)
       : [...favorites, product.id];
@@ -54,6 +56,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
           className="product-image object-cover"
         />
 
+        {/* Oferta ribbon */}
+        {product.enOferta && (
+          <div className="absolute top-4 -left-8 w-36 bg-red-500 text-white text-xs font-bold text-center py-1 rotate-[-45deg] shadow-md">
+            ¡En Oferta!
+          </div>
+        )}
+
         {/* Badges */}
         <div className="absolute top-2 left-2 flex flex-col gap-2">
           {product.nuevo && (
@@ -77,31 +86,39 @@ const ProductCard = ({ product }: ProductCardProps) => {
           {liked ? (
             <FaHeart className="text-brishop-500" size={18} />
           ) : (
-            <FiHeart className="text-gray-500 hover:text-brishop-500 transition-colors" size={18} />
+            <FiHeart
+              className="text-gray-500 hover:text-brishop-500 transition-colors"
+              size={18}
+            />
           )}
         </button>
       </div>
 
       {/* Content */}
-   <div className="flex items-center justify-between mt-3 p-4">
-  <div className="flex flex-col">
-    <span className="text-xs text-gray-400">Desde</span>
-    <span className="text-lg font-semibold text-brishop-800">
-      {formatPrice(product.precioDesde)}
-      <span className="text-xs font-normal text-gray-400 block">quincenal</span>
-      
-    </span>
- 
-  </div>
+      <div className="h-auto flex items-center text-left pt-2">
+        <h1 className="text-base font-semibold text-gray-800 px-3 truncate w-full">
+          {product.nombre}
+        </h1>
+      </div>
+      <div className="flex items-center justify-between px-3 pt-2 mb-4">
+        <div className="flex flex-col">
+          <span className="text-xs text-gray-400">Desde</span>
+          <span className="text-lg font-semibold text-brishop-800">
+            {formatPrice(product.precioDesde)}
+            <span className="text-xs font-normal text-gray-400 block">
+              quincenal
+            </span>
+          </span>
+        </div>
 
-  <Link
-    href={`/producto/${product.id}`}
-    className="bg-brishop-600 hover:bg-brishop-700 text-white text-sm py-2 px-4 rounded-md transition-colors duration-300"
-  >
-    Ver detalles{" "}
-    <TbExternalLink className="inline-block ml-1" size={16} />
-  </Link>
-</div>
+        <Link
+          href={`/producto/${product.id}`}
+          className="bg-brishop-600 hover:bg-brishop-700 text-white text-sm py-2 px-4 rounded-md transition-colors duration-300"
+        >
+          Ver detalles{" "}
+          <TbExternalLink className="inline-block ml-1" size={16} />
+        </Link>
+      </div>
 
       {/* Quick view overlay (mobile) */}
       <div

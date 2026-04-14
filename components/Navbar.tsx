@@ -1,9 +1,12 @@
 "use client";
+
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 import { Menu, X, Search } from "lucide-react";
+import { MdLocalOffer } from "react-icons/md";
+
 import { FaHeart } from "react-icons/fa";
 import { categories } from "@/data/categories";
 import { products, Product } from "@/data/products";
@@ -103,16 +106,37 @@ const Navbar = () => {
               {category.nombre}
             </Link>
           ))}
-          <Link href="/contacto" className={navLinkClass("/contacto")}>
-            Contacto
+          <Link href="/favoritos" className={navLinkClass("/favoritos")}>
+            Favs. <FaHeart className="h-4 w-4 text-brishop-500 inline" />
           </Link>
-          <Link
-            href="/favoritos"
-            title="Favoritos"
-            className="bg-white p-2 rounded-full border border-brishop-200 hover:border-brishop-600 transition-colors"
-          >
-            <FaHeart className="h-5 w-5 text-brishop-500" />
-          </Link>
+          <div className="relative inline-flex items-center">
+            <Link
+              href="/ofertas"
+              className="bg-red-500 text-white px-4 py-2 flex items-center justify-center gap-1 rounded-full font-semibold shadow-md hover:bg-red-600 transition-all animate-pulse"
+            >
+              Ofertas
+            </Link>
+
+            {/* Tag colgante - solo icono */}
+            <span
+              className="absolute left-1/2 pointer-events-none flex flex-col items-center z-50"
+              style={{
+                top: "100%",
+                transform: "translateX(-50%)",
+                transformOrigin: "top center",
+                animation: "swing 3s ease-in-out infinite",
+              }}
+            >
+              {/* Hilo */}
+              <span
+                className="block bg-gray-300 z-50"
+                style={{ width: "1.5px", height: "15px" }}
+              />
+              {/* Solo el icono */}
+
+              <img src="/discount-2045.svg" alt="discount tag" />
+            </span>
+          </div>
         </nav>
 
         {/* Desktop Search */}
@@ -250,18 +274,19 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              href="/contacto"
-              className={navLinkMobileClass("/contacto")}
+              href="/favoritos"
+              className={navLinkMobileClass(`/favoritos`)}
               onClick={() => setIsOpen(false)}
             >
-              Contacto
+              Favs. <FaHeart className="h-4 w-4 text-brishop-500 inline" />
             </Link>
             <Link
-              href="/favoritos"
-              className="text-brishop-500 pl-8 py-2"
+              href="/ofertas"
+              className="bg-red-400 text-white px-4 py-2 rounded-full font-semibold shadow-md hover:bg-red-600 transition-all animate-pulse w-28 flex items-center justify-center gap-1"
               onClick={() => setIsOpen(false)}
             >
-              <FaHeart className="h-5 w-5" />
+              Ofertas
+              <MdLocalOffer className="h-4 w-4" />
             </Link>
           </nav>
         </div>

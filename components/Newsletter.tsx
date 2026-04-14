@@ -34,15 +34,21 @@ const Newsletter = () => {
     setIsLoading(true);
 
     try {
-      console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID)
+      // Notificación a Brishop
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        
         process.env.NEXT_PUBLIC_EMAILJS_NEWSLETTER_TEMPLATE_ID!,
         { subscriber_email: email },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-        
       );
+
+      // Bienvenida al suscriptor
+      // await emailjs.send(
+      //   process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      //   process.env.NEXT_PUBLIC_EMAILJS_WELCOME_TEMPLATE_ID!,
+      //   { subscriber_email: email },
+      //   process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      // );
 
       setSubmitted(true);
       setEmail("");
@@ -119,7 +125,7 @@ const Newsletter = () => {
                 type="button"
                 role="switch"
                 aria-checked={accepted ? "true" : "false"}
-                title="accept"
+                title="Aceptar política de privacidad"
                 onClick={() => {
                   setAccepted((prev) => !prev);
                   if (error) setError("");
