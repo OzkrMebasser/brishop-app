@@ -365,7 +365,7 @@ const rawProducts: RawProduct[] = [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776136426/18-Bolsa-Tommy-Hilfiger-Popette-Mini-Tote_rpguwp.jpg",
     ],
     descripcion:
-      "Redefine tu look diario con este sofisticado bolso Tommy Hilfiger. Su diseño de rayas verticales en tonos crema y café, complementado con el icónico monograma dorado \"TH\" y acabados en piel sintética, aporta un aire de lujo atemporal a cualquier outfit.",
+      'Redefine tu look diario con este sofisticado bolso Tommy Hilfiger. Su diseño de rayas verticales en tonos crema y café, complementado con el icónico monograma dorado "TH" y acabados en piel sintética, aporta un aire de lujo atemporal a cualquier outfit.',
     precioContado: 1300,
     precioCredito: 1650,
     categoria: "bolsas",
@@ -404,7 +404,7 @@ const rawProducts: RawProduct[] = [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776137572/20-Bolsa-Tommy-Hilfiger-Kinley-3_xjupjr.jpg",
     ],
     descripcion:
-      "Eleva tu estilo diario con esta sofisticada bolsa crossbody original. Su diseño destaca por el icónico patrón de monograma \"TH\" en tonos crema y beige, enmarcado por elegantes bordes en color miel.",
+      'Eleva tu estilo diario con esta sofisticada bolsa crossbody original. Su diseño destaca por el icónico patrón de monograma "TH" en tonos crema y beige, enmarcado por elegantes bordes en color miel.',
     precioContado: 1300,
     precioCredito: 1650,
     categoria: "bolsas",
@@ -426,7 +426,7 @@ const rawProducts: RawProduct[] = [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776139364/21-Bolso-Tommy-Hilfiger-Satchel-Azul-Marino-3_w1ihce.jpg",
     ],
     descripcion:
-      "Eleva tu estilo diario con este impresionante bolso Satchel de Tommy Hilfiger. Su diseño estructurado en el icónico tono Space Blue y el herraje metálico con el monograma \"TH\" en dorado son la personificación del lujo atemporal.",
+      'Eleva tu estilo diario con este impresionante bolso Satchel de Tommy Hilfiger. Su diseño estructurado en el icónico tono Space Blue y el herraje metálico con el monograma "TH" en dorado son la personificación del lujo atemporal.',
     precioContado: 1500,
     precioCredito: 1850,
     categoria: "bolsas",
@@ -495,6 +495,732 @@ const rawProducts: RawProduct[] = [
     marca: "Karl Lagerfeld",
     sexo: "dama",
     subCategoria: "satchel",
+    enOferta: false,
+    precioOferta: 0,
+  },
+
+  //25
+  {
+    nombre: "Bolsa Karl Lagerfeld Paris Maybelle Crossbody",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776142171/25-Bolsa_Karl_Lagerfeld_Paris_Maybelle_Crossbody-1_t2ee4h.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776142171/25-Bolsa_Karl_Lagerfeld_Paris_Maybelle_Crossbody-1_t2ee4h.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776142172/25-Bolsa_Karl_Lagerfeld_Paris_Maybelle_Crossbody-2_i6jceq.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776142175/25-Bolsa_Karl_Lagerfeld_Paris_Maybelle_Crossbody-3_yjzjce.jpg",
+    ],
+    descripcion:
+      'Eleva tu outfit con esta espectacular crossbody de Karl Lagerfeld. Su diseño en color negro profundo destaca por el divertido parche frontal del "Kaiser" y su distintiva correa ancha logotipada en blanco y negro.',
+    precioContado: 2500,
+    precioCredito: 2900,
+    categoria: "bolsas",
+    marca: "Karl Lagerfeld",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+
+  //26
+  {
+    nombre: "Bolsa Karl Lagerfeld Paris Maybelle Pin Crossbody",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776144208/26-Bolsa-Karl-Lagerfeld-Paris-Maybelle-Pin-Crossbody-1_b3za56.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776144208/26-Bolsa-Karl-Lagerfeld-Paris-Maybelle-Pin-Crossbody-1_b3za56.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776144212/26-Bolsa-Karl-Lagerfeld-Paris-Maybelle-Pin-Crossbody-2_o01u2i.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776144216/26-Bolsa-Karl-Lagerfeld-Paris-Maybelle-Pin-Crossbody-3_mdc6jn.jpg",
+    ],
+    descripcion:
+      "Eleva tu look con esta espectacular crossbody Maybelle. Su diseño en color negro profundo destaca por sus encantadores parches de corazones en glitter rojo y dorado, junto con las figuras icónicas de Karl y su inseparable gatita Choupette.",
+    precioContado: 2500,
+    precioCredito: 2900,
+    categoria: "bolsas",
+    marca: "Karl Lagerfeld",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Karl Lagerfeld Paris Maybelle Fiusha Crossbody",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776144951/27-Bolsa-Karl-Lagerfeld-Paris-Maybelle-Crossbody-2_etgcqs.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776144951/27-Bolsa-Karl-Lagerfeld-Paris-Maybelle-Crossbody-2_etgcqs.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776144955/27-Bolsa-Karl-Lagerfeld-Paris-Maybelle-Crossbody-1_z1k4s4.webp",
+    ],
+    descripcion:
+      "Eleva tu estilo al máximo con esta espectacular crossbody Maybelle en un vibrante color fucsia. Su diseño icónico destaca por los parches de Karl y su inseparable gatita Choupette, dándole ese toque de lujo divertido que solo esta marca ofrece.",
+    precioContado: 2500,
+    precioCredito: 2900,
+    categoria: "bolsas",
+    marca: "Karl Lagerfeld",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Karl Lagerfeld Paris Kristina",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776145889/28-Bolsa-Karl-Lagerfeld-Paris-Kristina-1_yg3nly.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776145889/28-Bolsa-Karl-Lagerfeld-Paris-Kristina-1_yg3nly.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776145892/28-Bolsa-Karl-Lagerfeld-Paris-Kristina-2_dt3i8h.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776145887/28-Bolsa-Karl-Lagerfeld-Paris-Kristina-3_au1dis.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776145896/28-Bolsa-Karl-Lagerfeld-Paris-Kristina-4_ylqlz9.jpg",
+    ],
+    descripcion:
+      "Eleva tu look al instante con la impresionante Kristina Tote de Karl Lagerfeld. Su diseño en color negro profundo resalta por el icónico logotipo bordado en blanco con textura, aportando una dosis instantánea de sofisticación moderna.",
+    precioContado: 3000,
+    precioCredito: 3400,
+    categoria: "bolsas",
+    marca: "Karl Lagerfeld",
+    sexo: "dama",
+    subCategoria: "tote",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Karl Lagerfeld Paris Adele Bucket",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776147096/29-Bolsa-Karl-Lagerfeld-Paris-Adele-Bucket-1_y5sdv9.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776147096/29-Bolsa-Karl-Lagerfeld-Paris-Adele-Bucket-1_y5sdv9.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776147101/29-Bolsa-Karl-Lagerfeld-Paris-Adele-Bucket-2_m4zpin.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776147120/29-Bolsa-Karl-Lagerfeld-Paris-Adele-Bucket-4_rdxr44.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776147108/29-Bolsa-Karl-Lagerfeld-Paris-Adele-Bucket-3_gk64rj.jpg",
+    ],
+    descripcion:
+      "Descubre la sofisticación en su estado más puro con la Adele Bucket Bag. El contraste entre su delicado tono rosa y la correa deportiva con el logo de Karl crea una pieza única que robará todas las miradas. Perfecta para quienes buscan un accesorio con personalidad que hable por sí solo.",
+    precioContado: 2250,
+    precioCredito: 2699,
+    categoria: "bolsas",
+    marca: "Karl Lagerfeld",
+    sexo: "dama",
+    subCategoria: "bucket",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Michael Kors Jet Set Travel Medium Logo Dome Crossbody",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776147978/30-Bolsa-Michael-Kors-Medium-Logo-1_yiodwn.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776147978/30-Bolsa-Michael-Kors-Medium-Logo-1_yiodwn.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776147985/30-Bolsa-Michael-Kors-Medium-Logo-2_vqh9og.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776147990/30-Bolsa-Michael-Kors-Medium-Logo-3_nhym8n.webp",
+    ],
+    descripcion:
+      "Descubre la sofisticación en su estado más puro con la Jet Set Travel Dome. El contraste entre su lona revestida con el monograma MK y los detalles en cuero color miel crea una pieza única que robará todas las miradas. Su silueta estructurada proyecta una imagen impecable y sofisticada.",
+    precioContado: 2100,
+    precioCredito: 2550,
+    categoria: "bolsas",
+    marca: "Michael Kors",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Guess Estampado de Cerezas",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776151514/31-Bolsa-Guess-estampado-cerezas-1_bdygwt.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776151514/31-Bolsa-Guess-estampado-cerezas-1_bdygwt.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776151517/31-Bolsa-Guess-estampado-cerezas-2_ntf5s2.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776151521/31-Bolsa-Guess-estampado-cerezas-3_ragr5p.jpg",
+    ],
+    descripcion:
+      "Dale un respiro a tus básicos con esta espectacular crossbody de Guess. El vibrante estampado de cerezas sobre el icónico monograma carbón crea un contraste divertido y ultra sofisticado. Un diseño audaz para quienes no temen destacar con estilo.",
+    precioContado: 1400,
+    precioCredito: 1750,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Michael Kors Jet Set Travel Double Pocket",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776149146/32-Bolso-Michael-Kors-Jet-Set-Travel-Double-Pocket-1_ednntm.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776149146/32-Bolso-Michael-Kors-Jet-Set-Travel-Double-Pocket-1_ednntm.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776149134/32-Bolso-Michael-Kors-Jet-Set-Travel-Double-Pocket-2_eqpgnz.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776149138/32-Bolso-Michael-Kors-Jet-Set-Travel-Double-Pocket-3_ha2qgv.jpg",
+    ],
+    descripcion:
+      "Redefine tu día a día con la Jet Set Travel Tote. Este diseño estructurado en tono vainilla, con su inconfundible estampado de monograma MK, proyecta una imagen impecable y cosmopolita. Sus elegantes correas de cuero color miel y herrajes dorados son el toque de distinción perfecto.",
+    precioContado: 3400,
+    precioCredito: 3800,
+    categoria: "bolsas",
+    marca: "Michael Kors",
+    sexo: "dama",
+    subCategoria: "tote",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Michael Kors Carson",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776149997/33-Bolsa-Michael-Kors-Carson-1_eeboca.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776149997/33-Bolsa-Michael-Kors-Carson-1_eeboca.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776150000/33-Bolsa-Michael-Kors-Carson-2_wn1dxq.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776150026/33-Bolsa-Michael-Kors-Carson-3_u5ddi4.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776150040/33-Bolsa-Michael-Kors-Carson-4_u0un97.jpg",
+    ],
+    descripcion:
+      "Descubre el accesorio que se convertirá en el centro de todas las miradas. La bolsa Carson Bucket en tono Hibiscus es la definición de lujo contemporáneo. Su silueta estructurada, realzada por el icónico herraje metálico tipo bocado, proyecta una imagen impecable y audaz.",
+    precioContado: 3000,
+    precioCredito: 3450,
+    categoria: "bolsas",
+    marca: "Michael Kors",
+    sexo: "dama",
+    subCategoria: "bucket",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Guess Berlyn Denim Large",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776151143/34-Bolsa-Guess-Berlyn-Denim-Large-1_kdidq5.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776151143/34-Bolsa-Guess-Berlyn-Denim-Large-1_kdidq5.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776151149/34-Bolsa-Guess-Berlyn-Denim-Large-2_srnbkp.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776151155/34-Bolsa-Guess-Berlyn-Denim-Large-3_kvsouw.webp",
+    ],
+    descripcion:
+      "Rompe con lo convencional con la impresionante Berlyn Satchel de Guess. Su diseño en mezclilla azul premium, acentuado con herrajes dorados y dijes icónicos, es la pieza maestra que le falta a tu colección. El balance perfecto entre un aire rebelde y una silueta estructurada de alta gama.",
+    precioContado: 1750,
+    precioCredito: 2250,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Michael Kors Voyager Saffiano Lavanda",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776212505/35-Bolsa-Michael-Kors-Voyager-Saffiano-Lavanda-1_aqsyi5.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776212505/35-Bolsa-Michael-Kors-Voyager-Saffiano-Lavanda-1_aqsyi5.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776212506/35-Bolsa-Michael-Kors-Voyager-Saffiano-Lavanda-2_r1nvi6.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776212507/35-Bolsa-Michael-Kors-Voyager-Saffiano-Lavanda-3_ymlqkr.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776212509/35-Bolsa-Michael-Kors-Voyager-Saffiano-Lavanda-4_tgy9zp.jpg",
+    ],
+    descripcion:
+      "Descubre el toque de distinción que redefine lo cotidiano. La Voyager Tote en suave tono lila es la pieza maestra para quienes buscan un estilo impecable sin esfuerzo. Su diseño estructurado y el brillo sutil de sus herrajes plateados proyectan una imagen sofisticada y profesional.",
+    precioContado: 3500,
+    precioCredito: 3850,
+    categoria: "bolsas",
+    marca: "Michael Kors",
+    sexo: "dama",
+    subCategoria: "tote",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Cartera Michael Kors Saffiano Lavanda",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776214680/36-Cartera-Michael-Kors-Saffiano-Lavanda-1_nft3yh.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776214680/36-Cartera-Michael-Kors-Saffiano-Lavanda-1_nft3yh.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776214681/36-Cartera-Michael-Kors-Saffiano-Lavanda-2_aplram.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776214682/36-Cartera-Michael-Kors-Saffiano-Lavanda-3_cvot7c.jpg",
+    ],
+    descripcion:
+      "Descubre la pieza maestra que redefine la organización diaria. Esta cartera Michael Kors en suave tono lila es el toque de distinción que tu colección merece. Su acabado en la icónica piel Saffiano proyecta una imagen impecable y sofisticada, garantizando además una durabilidad extraordinaria.",
+    precioContado: 1700,
+    precioCredito: 2100,
+    categoria: "bolsas",
+    marca: "Michael Kors",
+    sexo: "dama",
+    subCategoria: "carteras",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden Clarke",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776220595/37-Steve-Madden-Clarke_shn1xg.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776220595/37-Steve-Madden-Clarke_shn1xg.jpg",
+    ],
+    descripcion:
+      "Redefine tu estilo con la Clarke Crossbody. Su exquisita textura grabada tipo cocodrilo y su vibrante tono verde petróleo crean una pieza maestra que proyecta seguridad y sofisticación. El accesorio perfecto para quienes buscan un toque de distinción que hable por sí solo.",
+    precioContado: 1300,
+    precioCredito: 1650,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden B-Byvonne Menta",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776221879/38-Bolsa-Steve-Madden_B-Byvonne-Menta-1_d74kxb.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776221879/38-Bolsa-Steve-Madden_B-Byvonne-Menta-1_d74kxb.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776221880/38-Bolsa-Steve-Madden_B-Byvonne-Menta-2_jhwalr.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776221876/38-Bolsa-Steve-Madden_B-Byvonne-Menta-3_tf7i2t.jpg",
+    ],
+    descripcion:
+      "Redefine tu estilo con la B-Byvonne. Su exquisita textura tejida y su delicado tono verde pastel crean un toque de distinción que proyecta una imagen impecable y sofisticada. El accesorio ideal para quienes buscan destacar con un lujo relajado pero lleno de personalidad.",
+    precioContado: 1350,
+    precioCredito: 1699,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden B-Byvonne Beige",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776221877/39-Bolsa-Steve-Madden_B-Byvonne-Beige-1_bfllzr.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776221877/39-Bolsa-Steve-Madden_B-Byvonne-Beige-1_bfllzr.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776221878/39-Bolsa-Steve-Madden_B-Byvonne-Beige-2_hn80ku.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776221878/39-Bolsa-Steve-Madden_B-Byvonne-Beige-3_d7uptp.jpg",
+    ],
+    descripcion:
+      "Descubre la sofisticación en su estado más puro con la Byvonne en tono nude. Su diseño capitonado es visualmente impactante y aporta una armonía única a tu colección. Un básico de alta gama pensado para quienes buscan una presencia impecable y refinada sin esfuerzo.",
+    precioContado: 1350,
+    precioCredito: 1699,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden Bmazie Cereza",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776222500/40-Bolsa-Steve-Madden-Bmazie-Cereza-1_lytlvg.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776222500/40-Bolsa-Steve-Madden-Bmazie-Cereza-1_lytlvg.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776222503/40-Bolsa-Steve-Madden-Bmazie-Cereza-2_wq2ut5.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776222506/40-Bolsa-Steve-Madden-Bmazie-Cereza-3_firi67.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776222510/40-Bolsa-Steve-Madden-Bmazie-Cereza-4_oktsld.webp",
+    ],
+    descripcion:
+      "Dale un respiro a lo convencional con la espectacular Bmazie de Steve Madden. El contraste del negro profundo con el vibrante estampado de cerezas en su asa crea una pieza maestra llena de personalidad. Un diseño audaz que robará todas las miradas.",
+    precioContado: 1200,
+    precioCredito: 1600,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden Bharlan Llaveritos",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776223210/41-Bolsa-Steve-Madden-Bharlan-llaveritos-1_xadphy.avif",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776223210/41-Bolsa-Steve-Madden-Bharlan-llaveritos-1_xadphy.avif",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776223211/41-Bolsa-Steve-Madden-Bharlan-llaveritos-2_v3uy3q.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776223211/41-Bolsa-Steve-Madden-Bharlan-llaveritos-3_rmtruo.avif",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776223212/41-Bolsa-Steve-Madden-Bharlan-llaveritos-4_zd1sew.avif",
+    ],
+    descripcion:
+      "Rompe las reglas con un diseño que lo tiene todo. Este bolso negro de silueta clásica se transforma por completo con un juego de charms exclusivos: dados, un corazón de cristal ámbar y una carita feliz. La pieza maestra para quienes buscan un estilo audaz, lúdico y lleno de detalles.",
+    precioContado: 1700,
+    precioCredito: 1999,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: true,
+    precioOferta: 1500,
+  },
+  {
+    nombre: "Bolsa Steve Madden Bcitra Edición Mezclilla Patchwork",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776225822/42-Bolsa-Steve-Madden-Mezclilla_vucbxr.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776225822/42-Bolsa-Steve-Madden-Mezclilla_vucbxr.jpg",
+    ],
+    descripcion:
+      "Redescubre la versatilidad con la espectacular Bcitra Patchwork. El juego de tonalidades en mezclilla azul, resaltado por costuras blancas y el imponente logotipo en tono tabaco, crea una pieza maestra que proyecta un estilo fresco y audaz.",
+    precioContado: 1200,
+    precioCredito: 1525,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden B-Glow Barrel Bag",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776227342/43-Bolsa-Steve-Madden-B-Glow-Barrel-Bag_htgu5x.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776227342/43-Bolsa-Steve-Madden-B-Glow-Barrel-Bag_htgu5x.jpg",
+    ],
+    descripcion:
+      "Redefine tu estilo con esta pieza maestra de silueta cilíndrica y actitud audaz. Su diseño en negro profundo, resaltado por herrajes dorados y charms exclusivos de texturas mixtas, es el toque de distinción que robará todas las miradas.",
+    precioContado: 1700,
+    precioCredito: 1999,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: true,
+    precioOferta: 1500,
+  },
+  {
+    nombre: "Bolsa Steve Madden Blexi Nude",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776228001/44-Bolsa-Steve-Madden-Blexi-Nude-1_ntjh3p.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776228001/44-Bolsa-Steve-Madden-Blexi-Nude-1_ntjh3p.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776228001/44-Bolsa-Steve-Madden-Blexi-Nude-2_nxedj2.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776228002/44-Bolsa-Steve-Madden-Blexi-Nude-3_seasyb.webp",
+    ],
+    descripcion:
+      "Redefine tu estilo diario con esta pieza maestra de textura Saffiano en tono nude. Sus elegantes detalles de cadena en color plomizo y silueta estructurada son el toque de distinción ideal para una imagen impecable. El upgrade de lujo definitivo para quienes buscan versatilidad y sofisticación.",
+    precioContado: 1200,
+    precioCredito: 1500,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden Bthorne Dome Cafe",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776228753/45-Bolsa-Steve-Madden-Bthorne-Dome-Cafe-1_ih8yuh.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776228753/45-Bolsa-Steve-Madden-Bthorne-Dome-Cafe-1_ih8yuh.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776228704/45-Bolsa-Steve-Madden-Bthorne-Dome-Cafe-2_pdxlyx.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776228705/45-Bolsa-Steve-Madden-Bthorne-Dome-Cafe-3_pa2ve8.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776228751/45-Bolsa-Steve-Madden-Bthorne-Dome-Cafe-4_husymk.webp",
+    ],
+    descripcion:
+      "Redefine tu presencia con esta pieza maestra de silueta estructurada en un impecable tono café. Su sofisticado diseño con herrajes dorados y el icónico dije de cadena son el toque de distinción que robará todas las miradas.",
+    precioContado: 1500,
+    precioCredito: 1899,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden Bwebber-El Large Tote",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776230942/46-Bolsa-Steve-Madden-Bwebber-El-Large-Tote-1_uqt3hj.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776230942/46-Bolsa-Steve-Madden-Bwebber-El-Large-Tote-1_uqt3hj.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776230919/46-Bolsa-Steve-Madden-Bwebber-El-Large-Tote-2_wjhtyg.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776230920/46-Bolsa-Steve-Madden-Bwebber-El-Large-Tote-3_wwnvqv.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776230940/46-Bolsa-Steve-Madden-Bwebber-El-Large-Tote-4_ihujgi.jpg",
+    ],
+    descripcion:
+      "Redefine tu estilo diario con esta pieza maestra de silueta estructurada en negro profundo. Su diseño audaz, resaltado por el icónico relieve de la marca y un encantador monedero de cerezas, es el toque de distinción que robará todas las miradas.",
+    precioContado: 2100,
+    precioCredito: 2500,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "tote",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden Bverra Tote",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776232480/47-Bolsa-Steve-Madden-Bverra-1_movaug.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776232480/47-Bolsa-Steve-Madden-Bverra-1_movaug.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776232483/47-Bolsa-Steve-Madden-Bverra-2_amuhge.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776232487/47-Bolsa-Steve-Madden-Bverra-3_fkdcrw.jpg",
+    ],
+    descripcion:
+      "Redefine tu presencia con esta pieza maestra de silueta sofisticada en tono camel. Su diseño funcional, realzado por herrajes dorados y un tarjetero exclusivo a juego, es el toque de distinción que robará todas las miradas. Ideal para proyectar una imagen impecable con almacenamiento sorprendentemente amplio.",
+    precioContado: 2000,
+    precioCredito: 2400,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "tote",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Steve Madden Bthorne Dijes",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776234256/48-Bolsa-Steve-Madden-Bthorne-Dijes-1_vtsyqp.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776234256/48-Bolsa-Steve-Madden-Bthorne-Dijes-1_vtsyqp.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776234257/48-Bolsa-Steve-Madden-Bthorne-Dijes-2_qhwk9v.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776234258/48-Bolsa-Steve-Madden-Bthorne-Dijes-3_ttim2e.webp",
+    ],
+    descripcion:
+      "Redefine tu presencia con esta pieza maestra de silueta tipo media luna en negro profundo. Su diseño audaz, resaltado por el exclusivo dije de oso rojo y detalles urbanos, es el toque de distinción que robará todas las miradas.",
+    precioContado: 1350,
+    precioCredito: 1750,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "Shoulder",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Guess Wells Shoulder",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776234830/49-Bolsa-Guess-Wells-Shoulder-1_ekgrhh.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776234830/49-Bolsa-Guess-Wells-Shoulder-1_ekgrhh.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776234827/49-Bolsa-Guess-Wells-Shoulder-2_izcenl.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776234828/49-Bolsa-Guess-Wells-Shoulder-3_n67xtg.webp",
+    ],
+    descripcion:
+      "Redefine tu presencia con esta pieza maestra de silueta hobo en mezclilla premium. Su icónico patrón de monograma y el contraste audaz de su pouch removible en tono tabaco son el toque de distinción que robará todas las miradas.",
+    precioContado: 1600,
+    precioCredito: 1975,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "Shoulder",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Guess Ines Carryall Tote",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776235320/50-Bolsa-Guess-Ines-Carryall-1_w1gvv1.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776235320/50-Bolsa-Guess-Ines-Carryall-1_w1gvv1.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776235851/50-Bolsa-Guess-Ines-Carryall-2_rkgyws.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776235863/50-Bolsa-Guess-Ines-Carryall-3_dpd3mj.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776235850/50-Bolsa-Guess-Ines-Carryall-4_qgi9nu.webp",
+    ],
+    descripcion:
+      "Redefine tu presencia con esta pieza maestra de silueta estructurada y monograma icónico en tono carbón. Su diseño funcional, realzado por la banda frontal grabada, es el toque de distinción que robará todas las miradas.",
+    precioContado: 2000,
+    precioCredito: 2550,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "tote",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Guess Helaina Vino",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776236312/51-Bolsa-Guess-Helaina-Vino_mlk5jg.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776236312/51-Bolsa-Guess-Helaina-Vino_mlk5jg.jpg",
+    ],
+    descripcion:
+      "Redefine tu presencia con esta pieza maestra de silueta estructurada en un impecable tono vino. Su diseño belted con el icónico logo dorado central es el toque de distinción que robará todas las miradas en cualquier ocasión.",
+    precioContado: 1900,
+    precioCredito: 2250,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "satchel",
+    enOferta: true,
+    precioOferta: 1600,
+  },
+  {
+    nombre: "Bolsa Guess Avon Park",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776236727/52-Bolsa-Guess-Avon-Park-1_vvx9ks.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776236727/52-Bolsa-Guess-Avon-Park-1_vvx9ks.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776236724/52-Bolsa-Guess-Avon-Park-2_w4ouu1.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776236725/52-Bolsa-Guess-Avon-Park-3_tqeqwj.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776236726/52-Bolsa-Guess-Avon-Park-4_ssbzvg.webp",
+    ],
+    descripcion:
+      "Redefine tu presencia con esta pieza maestra de silueta estructurada y diseño color-block en azul y crema. Su estética moderna, realzada por el icónico logotipo de Los Ángeles, es el toque de distinción que robará todas las miradas.",
+    precioContado: 2000,
+    precioCredito: 2350,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "Shoulder",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Guess Rosse Small Tote",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776237379/53-Bolsa_-Guess-Rosse-Small-Tote-1_yrkjvf.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776237379/53-Bolsa_-Guess-Rosse-Small-Tote-1_yrkjvf.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776237381/53-Bolsa_-Guess-Rosse-Small-Tote-2_svocpb.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776237378/53-Bolsa_-Guess-Rosse-Small-Tote-3_gnl2a1.webp",
+    ],
+    descripcion:
+      "Redefine tu presencia con esta pieza maestra de silueta estructurada en un impecable tono blanco. Su diseño minimalista, realzado por el icónico logotipo repujado y una correa ajustable de tendencia, es el toque de distinción que robará todas las miradas.",
+    precioContado: 2100,
+    precioCredito: 2550,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "tote",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Guess Eldoria Camera",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776238246/54-Bolsa-Guess-Eldoria-Camera-1_f0uhd9.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776238246/54-Bolsa-Guess-Eldoria-Camera-1_f0uhd9.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776238249/54-Bolsa-Guess-Eldoria-Camera-2_fpaqvy.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776238247/54-Bolsa-Guess-Eldoria-Camera-3_idj7uw.jpg",
+    ],
+    descripcion:
+      "Redefine tu presencia con esta pieza maestra de silueta compacta en un delicado tono rosa. Su sofisticado diseño con monograma repujado y su versátil correa deportiva son el toque de distinción que robará todas las miradas.",
+    precioContado: 1600,
+    precioCredito: 1950,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Guess Elysia Woven",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776238721/55-Bolsa-Guess-Elysia-Woven-1_hjyors.avif",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776238721/55-Bolsa-Guess-Elysia-Woven-1_hjyors.avif",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776238719/55-Bolsa-Guess-Elysia-Woven-2_muanws.avif",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776238718/55-Bolsa-Guess-Elysia-Woven-3_n01ojs.avif",
+    ],
+    descripcion:
+      "Define tu presencia con esta pieza maestra de textura entretejida en un profundo tono chocolate. Su silueta hobo y los herrajes dorados con el icónico candado son el toque de distinción que robará todas las miradas.",
+    precioContado: 1500,
+    precioCredito: 1950,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "Shoulder",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Guess Elise Crossbody Clutch Hueso",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240052/56-Guess-Elise-Crossbody-Clutch-Hueso-1_n7ijpo.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240052/56-Guess-Elise-Crossbody-Clutch-Hueso-1_n7ijpo.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240053/56-Guess-Elise-Crossbody-Clutch-Hueso-2_xsusrc.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240057/56-Guess-Elise-Crossbody-Clutch-Hueso-3_mnk8ym.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240059/56-Guess-Elise-Crossbody-Clutch-Hueso-4_ebec88.webp",
+    ],
+    descripcion:
+      "Define tu estilo con esta pieza maestra de silueta estructurada en un impecable tono blanco hueso. Su diseño minimalista, realzado por un elegante broche de presión dorado y una versátil correa de cadena, proyecta una imagen impecable y sofisticada.",
+    precioContado: 1200,
+    precioCredito: 1450,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Guess Elise Crossbody Clutch Rojo",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240001/57-Guess-Elise-Crossbody-Clutch-Roja-1_bdf2kf.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240001/57-Guess-Elise-Crossbody-Clutch-Roja-1_bdf2kf.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240002/57-Guess-Elise-Crossbody-Clutch-Roja-2_nxlygh.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240016/57-Guess-Elise-Crossbody-Clutch-Roja-3_zzbsei.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240055/57-Guess-Elise-Crossbody-Clutch-Roja-4_j5jsw8.jpg",
+    ],
+    descripcion:
+      "Define tu presencia con esta pieza maestra de silueta estructurada en un vibrante tono rojo. Su icónico diseño acolchado en chevrón, realzado por elegantes herrajes dorados y una versátil correa de cadena, proyecta una imagen impecable y sofisticada.",
+    precioContado: 1200,
+    precioCredito: 1450,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Bolsa Guess Daryna II Crossbody",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240979/58-Bolsa-Guess-Daryna-1_tvmbji.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240979/58-Bolsa-Guess-Daryna-1_tvmbji.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240980/58-Bolsa-Guess-Daryna-2_p4p2pl.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776240982/58-Bolsa-Guess-Daryna-3_ea81oz.webp",
+    ],
+    descripcion:
+      "Define tu estilo con esta pieza maestra de silueta estructurada en un vibrante rojo pasión. Su diseño minimalista, realzado por el icónico logo triangular y su audaz guitar strap a juego, es el toque de distinción que robará todas las miradas.",
+    precioContado: 1400,
+    precioCredito: 1650,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "crossbody",
+    enOferta: true,
+    precioOferta: 1250,
+  },
+  {
+    nombre: "Cangurera Studio Puffer Cafe",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776242051/59-Cangurera-Studio-Puffer-Cafe-1_eopvcp.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776242051/59-Cangurera-Studio-Puffer-Cafe-1_eopvcp.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776242055/59-Cangurera-Studio-Puffer-Cafe-2_llwzhg.jpg",
+    ],
+    descripcion:
+      "Redefine tu comodidad con esta pieza maestra de silueta acolchada en un sofisticado tono café. Su diseño ligero y minimalista es el toque de distinción perfecto para un look urbano e impecable.",
+    precioContado: 500,
+    precioCredito: 500,
+    categoria: "bolsas",
+    marca: "Studio",
+    sexo: "dama",
+    subCategoria: "riñonera",
+    enOferta: false,
+    precioOferta: 0,
+  },
+  {
+    nombre: "Cangurera Steve Madden Nylon Belt Bag Set",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776242382/60-Cangurera-Steve-Madden-Nylon-1_e27gvj.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776242382/60-Cangurera-Steve-Madden-Nylon-1_e27gvj.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776242388/60-Cangurera-Steve-Madden-Nylon-2_arsguw.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776242390/60-Cangurera-Steve-Madden-Nylon-3_dishuc.jpg",
+    ],
+    descripcion:
+      "Define tu estilo urbano con esta pieza maestra de nailon premium en negro profundo. Su diseño versátil, realzado por el icónico logo SM y un pouch removible para Airpods, es el toque de distinción perfecto para un look impecable con total libertad.",
+    precioContado: 700,
+    precioCredito: 700,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "riñonera",
     enOferta: false,
     precioOferta: 0,
   },
