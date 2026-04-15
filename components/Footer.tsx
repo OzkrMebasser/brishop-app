@@ -5,8 +5,8 @@ import { categories } from "@/data/categories";
 import { MdLocalOffer } from "react-icons/md";
 
 const LogoBrishop =
-  "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/brishop-ecommerce%2FLOGO-brishop-horizontal.png?alt=media&token=851e2ab6-4510-4415-a2fc-07c5410999c0";
-
+  // "https://firebasestorage.googleapis.com/v0/b/prueba-context-ecommerce.appspot.com/o/brishop-ecommerce%2FLOGO-brishop-horizontal.png?alt=media&token=851e2ab6-4510-4415-a2fc-07c5410999c0";
+"https://res.cloudinary.com/djlgwpnqd/image/upload/v1776284468/logo-brishop-fashion-store_z8rl0l.png"
 const Footer = () => {
   return (
     <footer className="bg-white pt-16 pb-8 border-t border-gray-100">
