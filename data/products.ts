@@ -2412,6 +2412,32 @@ const rawProducts: RawProduct[] = [
     sexo: "caballero",
     subCategoria: "Gorras",
   },
+  {
+    nombre: "Gorra Adidas Saturday Relaxed en color beige",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776060848/13-Gorra-Adidas-Mujer_s2nbsz.jpg",
+    descripcion:
+      "Completa tu outfit con esta gorra Adidas en tono arena. Su diseño relaxed fit ofrece un ajuste cómodo y relajado, ideal para esos días donde buscas un estilo impecable sin esfuerzo.",
+    precioContado: 580,
+    precioCredito: 580,
+    categoria: "accesorios",
+    marca: "Adidas",
+    sexo: "dama",
+    subCategoria: "Gorras",
+  },
+  {
+    nombre: "Termo Stanley Quencher Pistacho 887ML",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776210663/17-Termo-Stanley-menta_mx51eq.webp",
+    descripcion:
+      "Descubre por qué el Quencher H2.0 es la pieza maestra de quienes no se detienen. En este refrescante tono verde pastel, no es solo un termo, es el upgrade definitivo para tu rutina diaria. Su diseño impecable y sofisticado robará todas las miradas mientras mantiene tu bebida favorita justo como te gusta. ¡Haz que cada trago cuente con el accesorio más viral del momento!",
+    precioContado: 900,
+    precioCredito: 900,
+    categoria: "accesorios",
+    marca: "Stanley",
+    sexo: "dama",
+    subCategoria: "Termos",
+  },
   // Ropa
 ];
 
