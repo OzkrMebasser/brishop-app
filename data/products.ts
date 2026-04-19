@@ -1224,6 +1224,353 @@ const rawProducts: RawProduct[] = [
     enOferta: false,
     precioOferta: 0,
   },
+  {
+    nombre: "Cartera Clutch Guess Tinsley Quilted Slim",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776394454/61-Cartera-Clutch-Guess-Tinsley-Quilted-Slim-1_v9fpwp.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776394454/61-Cartera-Clutch-Guess-Tinsley-Quilted-Slim-1_v9fpwp.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776394455/61-Cartera-Clutch-Guess-Tinsley-Quilted-Slim-2_gwrtnf.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776394469/61-Cartera-Clutch-Guess-Tinsley-Quilted-Slim-3_qflp0e.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776394457/61-Cartera-Clutch-Guess-Tinsley-Quilted-Slim-4_pbg9gq.webp",
+    ],
+    descripcion:
+      "Eleva tu elegancia con esta exclusiva cartera tipo clutch original de Guess. Su sofisticado diseño acolchado en color negro se complementa con un logo metálico frontal y un práctico cierre de solapa magnética. Delgada pero sorprendentemente espaciosa, cuenta con múltiples compartimentos internos, incluyendo 12 ranuras para tarjetas y una ventana para ID, permitiéndote llevar todo lo esencial con un estilo impecable",
+    precioContado: 850,
+    precioCredito: 850,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: "Cartera Tommy Hilfiger Continental con Logotipo Grabado",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776394877/62-Cartera-Tommy-Hilfiger-Continental-Logotipo-Grabado-1_jqgtrd.avif",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776394877/62-Cartera-Tommy-Hilfiger-Continental-Logotipo-Grabado-1_jqgtrd.avif",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776394879/62-Cartera-Tommy-Hilfiger-Continental-Logotipo-Grabado-2_vzgvpn.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776394882/62-Cartera-Tommy-Hilfiger-Continental-Logotipo-Grabado-3_wlrqa2.jpg",
+    ],
+    descripcion:
+      "Luce una elegancia atemporal con esta cartera original de piel sintética en un suave tono rosa rubor. Su diseño destaca por el monograma de la marca grabado en relieve en toda la superficie y una placa metálica frontal con el logo clásico, ofreciendo un estilo moderno y refinado. Con 8 ranuras para tarjetas y un amplio compartimento interno, es el accesorio perfecto para mantener tu organización con clase.",
+    precioContado: 850,
+    precioCredito: 850,
+    categoria: "bolsas",
+    marca: "Tommy Hilfiger",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: "Cartera Tommy Hilfiger Trifold en Piel Sintética Granulada",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776395750/63-Cartera-Tommy-Hilfiger-Trifold-1_ehrtkp.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776395750/63-Cartera-Tommy-Hilfiger-Trifold-1_ehrtkp.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776395757/63-Cartera-Tommy-Hilfiger-Trifold-2_lj0igh.webp",
+    ],
+    descripcion:
+      "Elegancia y feminidad en un solo accesorio. Esta cartera original en tono rosa rubor destaca por su diseño con monograma grabado y placa metálica de lujo. Espaciosa, segura y perfecta para elevar cualquier outfit con el estilo clásico de Tommy.",
+    precioContado: 750,
+    precioCredito: 750,
+    categoria: "bolsas",
+    marca: "Tommy Hilfiger",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: "Cartera Steve Madden Denim & Tan",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776396430/64-Cartera-Steve-Madden-Denim_yjuiou.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776396430/64-Cartera-Steve-Madden-Denim_yjuiou.jpg",
+    ],
+    descripcion:
+      "Luce un look urbano y chic con esta cartera original que combina mezclilla azul con detalles en piel sintética color miel. Un diseño fresco y resistente con broches dorados, ideal para quienes buscan un accesorio con mucha personalidad y estilo relajado.",
+    precioContado: 780,
+    precioCredito: 780,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: "Cartera Guess Abree Slim Clutch Logo",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776397511/65-Cartera-Guess-Abree-Slim-Clutch-Logo-1_jqdgru.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776397511/65-Cartera-Guess-Abree-Slim-Clutch-Logo-1_jqdgru.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776397551/65-Cartera-Guess-Abree-Slim-Clutch-Logo-2_pztix5.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776397556/65-Cartera-Guess-Abree-Slim-Clutch-Logo-3_lyvyko.webp",
+    ],
+    descripcion:
+      'Eleva tu estilo con esta elegante cartera original con el icónico patrón de logotipos "G" en relieve. Su diseño delgado en color beige cuenta con una sofisticada placa esmaltada dorada y múltiples compartimentos internos para tarjetas y billetes, combinando lujo y funcionalidad en un solo accesorio.',
+    precioContado: 900,
+    precioCredito: 900,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: "Cartera Guess Rhiannon Logo Fold-Over Clutch",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776397868/66-Cartera-Guess-Rhiannon-Logo-Fold-Over-Clutch-1_fjvfcy.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776397868/66-Cartera-Guess-Rhiannon-Logo-Fold-Over-Clutch-1_fjvfcy.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776397873/66-Cartera-Guess-Rhiannon-Logo-Fold-Over-Clutch-2_h47ndv.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776397877/66-Cartera-Guess-Rhiannon-Logo-Fold-Over-Clutch-3_l5zx7n.webp",
+    ],
+    descripcion:
+      "Luce sofisticada con esta elegante cartera tipo clutch en canvas revestido, destacada por su estampado integral de logotipos y herrajes dorados. Su diseño delgado tipo trifold incluye múltiples ranuras para tarjetas y compartimentos para billetes, ofreciendo una organización impecable con un estilo de lujo.",
+    precioContado: 900,
+    precioCredito: 900,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: "Cartera Guess Bowie Debossed Logo Slim Clutch",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776398350/67-Cartera-Guess-Bowie-Debossed-Logo-Slim-Clutch-1_fdbeln.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776398350/67-Cartera-Guess-Bowie-Debossed-Logo-Slim-Clutch-1_fdbeln.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776398353/67-Cartera-Guess-Bowie-Debossed-Logo-Slim-Clutch-2_zpovi8.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776398355/67-Cartera-Guess-Bowie-Debossed-Logo-Slim-Clutch-3_lp8xvn.webp",
+    ],
+    descripcion:
+      "Luce un estilo refinado con esta cartera original en tono marrón, destacada por su elegante diseño de logotipos grabados en relieve. Su silueta delgada de tres pliegues ofrece una organización superior con 12 ranuras para tarjetas y un práctico bolsillo exterior con cierre, ideal para la mujer moderna que busca lujo y funcionalidad",
+    precioContado: 900,
+    precioCredito: 900,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: 'Cartera Guess "La Rosa" SLG Monogram',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776398816/68-Cartera-Guess-La-Rosa-SLG-Monogram-1_ahzky0.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776398816/68-Cartera-Guess-La-Rosa-SLG-Monogram-1_ahzky0.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776398821/68-Cartera-Guess-La-Rosa-SLG-Monogram-2_gaxrmp.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776398818/68-Cartera-Guess-La-Rosa-SLG-Monogram-3_pkokpx.jpg",
+    ],
+    descripcion:
+      "Sofisticada y moderna, esta cartera original en color beige cuenta con un elegante diseño de logotipos grabados y herrajes dorados. Su estructura compacta tipo sobre incluye un cierre de botón seguro y múltiples organizadores internos, ideal para la mujer que busca un accesorio práctico sin perder el estilo chic.",
+    precioContado: 900,
+    precioCredito: 900,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: "Cartera Billetera Guess Color Sandia",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776399366/69-Cartera-Guess-Color-Sandia-1_cyvomv.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776399366/69-Cartera-Guess-Color-Sandia-1_cyvomv.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776399369/69-Cartera-Guess-Color-Sandia-2_dewad3.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776399367/69-Cartera-Guess-Color-Sandia-3_lrngmo.webp",
+    ],
+    descripcion:
+      "Añade un toque de energía a tu estilo con esta elegante cartera original en color sandía con diseño de monograma. Su estructura funcional de 19 cm x 10 cm ofrece un espacio óptimo para organizar tus tarjetas y billetes, combinando a la perfección la practicidad con un diseño moderno y atractivo.",
+    precioContado: 900,
+    precioCredito: 900,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: 'Cartera Guess "Kiran" Slim Clutch Monograma',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776399897/70-Cartera-Guess-Kiran-Slim-Clutch-Monograma-1_jnww6b.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776399897/70-Cartera-Guess-Kiran-Slim-Clutch-Monograma-1_jnww6b.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776399846/70-Cartera-Guess-Kiran-Slim-Clutch-Monograma-2_e5djqt.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776399899/70-Cartera-Guess-Kiran-Slim-Clutch-Monograma-3_tvcl0c.jpg",
+    ],
+    descripcion:
+      "Luce espectacular con esta cartera original que combina un sofisticado estampado de logotipos en tono crema con bordes negros en contraste. Su diseño tipo sobre con placa dorada ofrece una organización impecable y un estilo versátil que puedes llevar como clutch o dentro de tu bolso favorito.",
+    precioContado: 900,
+    precioCredito: 900,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: "Cartera Mini Guess Bitono Azul y Crema",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776402377/71-Cartera-Mini-Guess-Bitono-Azul-Crema-1_cdyqes.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776402377/71-Cartera-Mini-Guess-Bitono-Azul-Crema-1_cdyqes.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776402383/71-Cartera-Mini-Guess-Bitono-Azul-Crema-2_flpuox.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776402386/71-Cartera-Mini-Guess-Bitono-Azul-Crema-3_jzvpxu.jpg",
+    ],
+    descripcion:
+      "Añade un toque de color a tus accesorios con esta cartera original de Guess en azul náutico y crema. Su diseño compacto con cierre de cremallera dorado es perfecto para llevar tus tarjetas y monedas esenciales con un estilo moderno y sofisticado que cabe en cualquier bolso.",
+    precioContado: 800,
+    precioCredito: 800,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: 'Cartera Mini Guess "Logo Love" Blush',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776402669/72-Cartera-Mini-Guess-Logo-Love-Blush-1_lsvvmp.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776402669/72-Cartera-Mini-Guess-Logo-Love-Blush-1_lsvvmp.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776402678/72-Cartera-Mini-Guess-Logo-Love-Blush-2_dedwzb.webp",
+    ],
+    descripcion:
+      "Luce encantadora con esta cartera original en tono rosa pastel con el icónico monograma de la marca en relieve. Su diseño compacto con herrajes en oro rosa es la mezcla perfecta de estilo y practicidad para llevar tus esenciales con elegancia y frescura.",
+    precioContado: 800,
+    precioCredito: 800,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: "Cartera Guess Jayla Snap Wallet Bitono",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776402850/73-Cartera-Guess-Jayla-Snap-Wallet-Bitono-1_qjfpqk.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776402850/73-Cartera-Guess-Jayla-Snap-Wallet-Bitono-1_qjfpqk.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776402853/73-Cartera-Guess-Jayla-Snap-Wallet-Bitono-2_bf9gap.webp",
+    ],
+    descripcion:
+      "Elegancia y practicidad en un diseño compacto. Esta cartera original en combinación beige y negro destaca por su sofisticada placa frontal con el logo de Guess en tono dorado. Cuenta con un cierre de botón seguro, compartimento para billetes y monedero con cierre, ofreciendo organización impecable en un formato que cabe en cualquier bolso",
+    precioContado: 800,
+    precioCredito: 800,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: 'Cartera Guess Jayla Snap "Coffee Edition"',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776403283/74-Cartera-Guess-Jayla-Snap-Coffee-Edition-1_t573zz.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776403283/74-Cartera-Guess-Jayla-Snap-Coffee-Edition-1_t573zz.webp",
+    ],
+    descripcion:
+      "Estilo atemporal en un profundo tono café chocolate. Esta cartera original de piel sintética texturizada destaca por su placa metálica dorada y diseño compacto. Cuenta con monedero con cierre y compartimentos organizadores, siendo el accesorio ideal para quienes buscan elegancia y durabilidad en un solo lugar.",
+    precioContado: 800,
+    precioCredito: 800,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: 'Cartera Guess Foldover Zip "Black Stealth"',
+    imagen: "",
+    descripcion:
+      "Sofisticación total en negro mate. Esta cartera original combina una solapa de broche con un compartimento de cierre envolvente para máxima seguridad. Su diseño estructurado y herrajes a tono la convierten en el accesorio básico y elegante que combina con cualquier bolso y estilo.",
+    precioContado: 800,
+    precioCredito: 800,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: 'Tarjetero Guess Jayla "Pure White" con Cierre',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405073/76-Tarjetero-Guess-Jayla-Pure-White-con-Cierre-1_tp5844.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405073/76-Tarjetero-Guess-Jayla-Pure-White-con-Cierre-1_tp5844.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405067/76-Tarjetero-Guess-Jayla-Pure-White-con-Cierre-2_nmwyvq.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405062/76-Tarjetero-Guess-Jayla-Pure-White-con-Cierre-3_bufee2.webp",
+    ],
+    descripcion:
+      "Lleva lo esencial con máxima elegancia en este tarjetero original en color blanco brillante. Su diseño inteligente cuenta con múltiples ranuras externas, una solapa de seguridad con broche y un práctico compartimento con cierre para monedas o billetes, ofreciendo lujo y funcionalidad en un formato ultra compacto.",
+    precioContado: 600,
+    precioCredito: 600,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: 'Cartera Guess Saffron French Wallet "Cream Logo"',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405377/77-Cartera-Guess-Saffron-French-Wallet-Cream-Logo-2_pukkni.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405377/77-Cartera-Guess-Saffron-French-Wallet-Cream-Logo-2_pukkni.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405382/77-Cartera-Guess-Saffron-French-Wallet-Cream-Logo-1_unfb6n.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405387/77-Cartera-Guess-Saffron-French-Wallet-Cream-Logo-3_lztswy.webp",
+    ],
+    descripcion:
+      "Elegancia clásica en un diseño compacto y funcional. Esta cartera original destaca por su estampado de monograma en tonos crema y letras doradas en relieve, combinando una solapa de seguridad con un compartimento de cierre envolvente. El accesorio perfecto para organizar tus tarjetas y efectivo con el lujo inconfundible de Guess.",
+    precioContado: 800,
+    precioCredito: 800,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: 'Tarjetero Guess Bowie "Taupe" Multi-Ranuras',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405789/78-Tarjetero-Guess-Bowie-Taupe-Multi-Ranuras-1_vrxwiy.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405789/78-Tarjetero-Guess-Bowie-Taupe-Multi-Ranuras-1_vrxwiy.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405779/78-Tarjetero-Guess-Bowie-Taupe-Multi-Ranuras-2_emhofm.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776405784/78-Tarjetero-Guess-Bowie-Taupe-Multi-Ranuras-3_fklx7q.webp",
+    ],
+    descripcion:
+      "Organiza tus tarjetas con estilo en este elegante tarjetero original en tono taupe. Destaca por su diseño de logotipos grabados en relieve y un práctico compartimento superior con cierre dorado para monedas o billetes, ofreciendo lujo compacto y funcionalidad total para tu día a día.",
+    precioContado: 650,
+    precioCredito: 650,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: 'Tarjetero Guess "Caramel" con Correa de Mano',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776406123/79-Tarjetero-Guess-Caramel-Correa-de-Mano-1_cb8f4x.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776406123/79-Tarjetero-Guess-Caramel-Correa-de-Mano-1_cb8f4x.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776406127/79-Tarjetero-Guess-Caramel-Correa-de-Mano-2_namnuu.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776406132/79-Tarjetero-Guess-Caramel-Correa-de-Mano-3_yakipf.webp",
+    ],
+    descripcion:
+      "Estilo y comodidad en un solo accesorio. Este tarjetero original presenta el icónico monograma de la marca, una elegante placa dorada de Guess Los Angeles y una práctica correa de tela para llevarlo en la muñeca. Incluye compartimento con cierre para mayor seguridad de tus pertenencias.",
+    precioContado: 750,
+    precioCredito: 750,
+    categoria: "bolsas",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+  {
+    nombre: 'Tarjetero Steve Madden "Red Passion" con Cierre',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776406818/80-Tarjetero-Steve-Madden-Red-1_wvm7ak.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776406818/80-Tarjetero-Steve-Madden-Red-1_wvm7ak.jpg",
+    ],
+    descripcion:
+      "Impacta con este tarjetero original en un vibrante color rojo con textura granulada de alta resistencia. Su diseño moderno incluye el logo de la marca grabado en relieve y un compartimento con cierre ideal para monedas o billetes doblados. Un accesorio compacto, audaz y lleno de estilo.",
+    precioContado: 550,
+    precioCredito: 550,
+    categoria: "bolsas",
+    marca: "Steve Madden",
+    sexo: "dama",
+    subCategoria: "carteras",
+  },
+
   // Perfumes Caballero
   {
     nombre: "Guess Seductive Homme Blue",
@@ -2424,6 +2771,38 @@ const rawProducts: RawProduct[] = [
     marca: "Adidas",
     sexo: "dama",
     subCategoria: "Gorras",
+  },{
+    nombre: "Gorra Champion Beige con Morado",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776386682/14-Gorra-Champion-Beige-con-Morado-1_onaogs.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776386682/14-Gorra-Champion-Beige-con-Morado-1_onaogs.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776386698/14-Gorra-Champion-Beige-con-Morado-2_qp7weh.webp",
+    ],
+    descripcion:
+      "Luce un estilo auténtico con esta gorra original de algodón premium, ideal para el clima de La Paz. Su diseño ajustable y logo bordado ofrecen comodidad y un toque urbano exclusivo a cualquier outfit diario.",
+    precioContado: 570,
+    precioCredito: 570,
+    categoria: "accesorios",
+    marca: "Champion",
+    sexo: "dama",
+    subCategoria: "Gorras",
+  },
+  {
+    nombre: "Cosmetiquera Guess Hologramas Chocolate",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776392138/15-Cosmetiquera-Guess-Hologramas-Chocolate_ofmmzq.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776392138/15-Cosmetiquera-Guess-Hologramas-Chocolate_ofmmzq.jpg",
+    ],
+    descripcion:
+      "Organiza tus esenciales con el máximo estilo en este neceser original de Guess. Confeccionado en piel sintética de alta calidad con el icónico monograma de la marca y placa triangular metálica, cuenta con un diseño de doble compartimento con cierre que ofrece un espacio amplio y seguro para tus cosméticos o artículos de aseo personal. Un accesorio de lujo indispensable para tus viajes o para lucir impecable en tu tocador.",
+    precioContado: 700,
+    precioCredito: 700,
+    categoria: "accesorios",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "cosmetiquera",
   },
   {
     nombre: "Termo Stanley Quencher Pistacho 887ML",
@@ -2435,8 +2814,213 @@ const rawProducts: RawProduct[] = [
     precioCredito: 900,
     categoria: "accesorios",
     marca: "Stanley",
-    sexo: "dama",
+    sexo: "unisex",
     subCategoria: "Termos",
+  },
+  {
+    nombre: "Billetera Caballero Guess",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776387435/18-Cartera-Caballero-Guess-1_ag7r7v.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776387435/18-Cartera-Caballero-Guess-1_ag7r7v.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776387531/18-Cartera-Caballero-Guess-3_zuwpvi.webp",
+    ],
+    descripcion:
+      "Redefine tu presencia con esta pieza maestra de silueta estructurada en un impecable tono vino. Su diseño \"belted\" con el icónico logo dorado central es el toque de distinción que robará todas las miradas en cualquier ocasión. El upgrade de lujo definitivo para una imagen impecable y llena de sofisticación.",
+    precioContado: 680,
+    precioCredito: 680,
+    categoria: "accesorios",
+    marca: "Guess",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+  },
+  {
+    nombre: "Billetera Calvin Klein de Piel con Protección RFID",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776387536/19-Cartera-Calvin-Klein-piel-1_bp5s9j.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776387536/19-Cartera-Calvin-Klein-piel-1_bp5s9j.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776387540/19-Cartera-Calvin-Klein-piel-2_mci4xw.jpg",
+    ],
+    descripcion:
+      "Eleva tu estilo con esta cartera original de piel suave, diseñada para durar y proyectar elegancia. Su diseño bifold minimalista con placa metálica de logo es ideal para el caballero moderno que busca organización y distinción en un accesorio premium.",
+    precioContado: 750,
+    precioCredito: 750,
+    categoria: "accesorios",
+    marca: "Calvin Klein",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+  },
+  {
+    nombre: "Billetera Columbia \"Passcase\" en Piel Texturizada",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776388545/20-Cartera-Columbia-Passcase-01_zxzst0.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776388545/20-Cartera-Columbia-Passcase-01_zxzst0.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776388544/20-Cartera-Columbia-Passcase-2_cqutgv.webp",
+    ],
+    descripcion:
+      "Resistencia y estilo en un solo accesorio. Esta cartera original de piel cuenta con un diseño de alta durabilidad y un escudo frontal grabado que le da un toque rudo y auténtico. Con compartimentos diseñados para la aventura diaria, es la elección ideal para quien busca calidad que aguante todo.",
+    precioContado: 680,
+    precioCredito: 680,
+    categoria: "accesorios",
+    marca: "Columbia",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+  },
+  {
+    nombre: "Billetera Tommy Hilfiger Leather Valet con Protección RFID",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776389297/21-Cartera-Tommy-Hilfiger-Leather-Valet-1_tmifdn.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776389297/21-Cartera-Tommy-Hilfiger-Leather-Valet-1_tmifdn.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776389299/21-Cartera-Tommy-Hilfiger-Leather-Valet-2_xziqyt.webp",
+    ],
+    descripcion:
+      "Define tu estilo con esta cartera original de piel premium en color negro, detallada con la icónica placa metálica de la marca. Su tecnología de protección RFID mantiene tus tarjetas seguras contra robos de datos, combinando seguridad de vanguardia con un diseño sofisticado y atemporal.",
+    precioContado: 750,
+    precioCredito: 750,
+    categoria: "accesorios",
+    marca: "Tommy Hilfiger",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+  },
+  {
+    nombre: "Billetera Columbia Leather Bifold con Placa Metálica",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776389752/22-Cartera-Columbia-Leather-Bifold-1_nlnr1k.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776389752/22-Cartera-Columbia-Leather-Bifold-1_nlnr1k.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776389754/22-Cartera-Columbia-Leather-Bifold-2_jqkfvq.webp",
+    ],
+    descripcion:
+      "Añade un toque de distinción a tu día a día con esta cartera original en color chocolate, fabricada con piel de alta resistencia. Su diseño elegante se realza con una placa metálica lateral, ofreciendo la durabilidad legendaria de Columbia en un formato compacto y funcional.",
+    precioContado: 680,
+    precioCredito: 680,
+    categoria: "accesorios",
+    marca: "Columbia",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+  },
+  {
+    nombre: "Billetera Columbia Black Leather con Placa de Identidad",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776390425/23-Cartera-Columbia-Passcase-1_fkn3ig.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776390425/23-Cartera-Columbia-Passcase-1_fkn3ig.jpg",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776390434/23-Cartera-Columbia-Passcase-2_zx698b.webp",
+    ],
+    descripcion:
+      "Combina sobriedad y resistencia con esta billetera original en piel negra de grano fino. Su diseño compacto incluye una placa metálica distintiva que resalta la calidad de la marca, ofreciendo un accesorio versátil que se adapta tanto a un estilo casual como a uno más formal.",
+    precioContado: 680,
+    precioCredito: 680,
+    categoria: "accesorios",
+    marca: "Columbia",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+  },
+  {
+    nombre: "Billetera Columbia Bifold con Pespunte Decorativo",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776390635/24-Cartera-Columbia-Bifold-con-Pespunte_Decorativo-1_meyior.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776390635/24-Cartera-Columbia-Bifold-con-Pespunte_Decorativo-1_meyior.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776390638/24-Cartera-Columbia-Bifold-con-Pespunte_Decorativo-2_japbkj.webp",
+    ],
+    descripcion:
+      "Resalta tu estilo con esta cartera original que combina la durabilidad de la piel con un diseño detallado de costuras reforzadas. Su placa metálica lateral y acabado texturizado la hacen el accesorio perfecto para quienes buscan un balance entre lo rústico y lo moderno, garantizando resistencia para el uso diario.",
+    precioContado: 680,
+    precioCredito: 680,
+    categoria: "accesorios",
+    marca: "Columbia",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+  },
+  {
+    nombre: "Billetera Columbia Sport con Bordado Central",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776390874/25-Cartera-Columbia-Sport-Bordado-Central_nu1vln.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776390874/25-Cartera-Columbia-Sport-Bordado-Central_nu1vln.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776390868/25-Cartera-Columbia-Sport-Bordado-Central-2_t3llu3.webp",
+    ],
+    descripcion:
+      "Dale un giro a tu estilo con esta cartera original que destaca por su diseño de doble costura horizontal y piel lisa de alta calidad. Un modelo moderno y juvenil que mantiene la esencia resistente de Columbia, ideal para quienes buscan un accesorio con personalidad y gran durabilidad.",
+    precioContado: 680,
+    precioCredito: 680,
+    categoria: "accesorios",
+    marca: "Columbia",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+  },
+  {
+    nombre: "Billetera Columbia Bicolor Brown & Tan",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776391139/26-Billetera-Columbia-Bicolor-Brown-Tan_gptl6r.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776391139/26-Billetera-Columbia-Bicolor-Brown-Tan_gptl6r.jpg",
+    ],
+    descripcion:
+      "Añade estilo a tu bolsillo con esta cartera original que combina dos tonos de café para un look moderno y distinguido. Su diseño con costura vertical y logo dorado ofrece una estética premium sin perder la resistencia característica de la marca, ideal para quienes buscan algo diferente y con clase.",
+    precioContado: 680,
+    precioCredito: 680,
+    categoria: "accesorios",
+    marca: "Columbia",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+  },
+  {
+    nombre: "Billetera Columbia Brown con Doble Costura Central",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776391570/27-Billetera-Columbia-Brown-con-Doble-Costura-Central-1_lzwsek.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776391570/27-Billetera-Columbia-Brown-con-Doble-Costura-Central-1_lzwsek.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776391556/27-Billetera-Columbia-Brown-con-Doble-Costura-Central-2_w8tc7u.webp",
+    ],
+    descripcion:
+      "Añade un toque de carácter a tus accesorios con esta cartera original en tono café chocolate, destacada por sus detalles de costura horizontal reforzada. Fabricada en piel de alta resistencia con su distintiva placa metálica, es el complemento ideal para el hombre que busca un estilo rústico, duradero y con mucha personalidad.",
+    precioContado: 680,
+    precioCredito: 680,
+    categoria: "accesorios",
+    marca: "Columbia",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+  },
+  {
+    nombre: "Cosmetiquera Guess \"Logo Love\" Blush",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776392382/28-Cosmetiquera-Guess-Logo-Love-Blush-1_evwvde.jpg",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776392382/28-Cosmetiquera-Guess-Logo-Love-Blush-1_evwvde.jpg",
+    ],
+    descripcion:
+      "Luce impecable con esta cosmetiquera original de Guess en un delicado tono rosa palo con estampado de monograma. Su diseño estructurado con placa metálica central y cierre dorado ofrece el espacio perfecto para tus básicos de belleza, combinando funcionalidad con el toque chic que caracteriza a la marca.",
+    precioContado: 650,
+    precioCredito: 650,
+    categoria: "accesorios",
+    marca: "Guess",
+    sexo: "dama",
+    subCategoria: "cosmetiquera",
+  },
+  {
+    nombre: "Billetera Michael Kors Slim Billfold Signature",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776392809/29-Billetera-Michael-Kors-Slim-Billfold-Signature-1_ond9yx.webp",
+    imagenes: [
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776392809/29-Billetera-Michael-Kors-Slim-Billfold-Signature-1_ond9yx.webp",
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776392812/29-Billetera-Michael-Kors-Slim-Billfold-Signature-2_ubyjoy.webp",
+    ],
+    descripcion:
+      "Lleva la exclusividad contigo con esta cartera Michael Kors original, destacada por su icónico estampado de logotipos sobre un elegante fondo chocolate. Su diseño \"Slim\" es perfecto para el hombre que busca un perfil delgado sin sacrificar espacio, combinando el lujo moderno con la máxima funcionalidad para tus tarjetas y billetes.",
+    precioContado: 999,
+    precioCredito: 999,
+    categoria: "accesorios",
+    marca: "Michael Kors",
+    sexo: "caballero",
+    subCategoria: "billeteras",
+    enOferta: true,
+    precioOferta: 700,
+    
   },
   // Ropa
 ];
