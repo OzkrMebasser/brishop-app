@@ -53,11 +53,20 @@ const ProductCard = ({ product }: ProductCardProps) => {
           alt={product.nombre}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="product-image object-cover"
+          className={`product-image object-cover ${product.vendido ? "opacity-50 grayscale" : ""}`}
         />
 
+        {/* Vendido overlay */}
+        {product.vendido && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="bg-gray-800/80 text-white text-sm font-bold px-4 py-2 rounded-md tracking-widest uppercase">
+              Vendido
+            </span>
+          </div>
+        )}
+
         {/* Oferta ribbon */}
-        {product.enOferta && (
+        {product.enOferta && !product.vendido && (
           <div className="absolute top-4 -left-8 w-36 bg-red-500 text-white text-xs font-bold text-center py-1 rotate-[-45deg] shadow-md">
             ¡En Oferta!
           </div>
@@ -65,12 +74,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
         {/* Badges */}
         <div className="absolute top-2 left-2 flex flex-col gap-2">
-          {product.nuevo && (
+          {product.nuevo && !product.vendido && (
             <span className="bg-brishop-500 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-sm">
               NUEVO
             </span>
           )}
-          {product.destacado && !product.nuevo && (
+          {product.destacado && !product.nuevo && !product.vendido && (
             <span className="bg-lilac-400 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-sm">
               DESTACADO
             </span>

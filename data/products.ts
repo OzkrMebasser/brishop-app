@@ -29,6 +29,7 @@ export interface Product {
   talla?: string;
   enOferta?: boolean;
   precioOferta?: number;
+  vendido?: boolean; 
 }
 
 type RawProduct = Omit<Product, "id" | "abonos" | "precioDesde">;
@@ -53,6 +54,7 @@ const rawProducts: RawProduct[] = [
     marca: "Aldo",
     sexo: "dama",
     subCategoria: "satchel",
+    vendido: true,
   },
   {
     nombre: "Bolsa Aldo Baander Negra",

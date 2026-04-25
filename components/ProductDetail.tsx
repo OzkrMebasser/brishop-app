@@ -15,6 +15,14 @@ interface ProductDetailProps {
   product: Product;
 }
 
+const categoryLabels: Record<string, string> = {
+  bolsas: "bolsas",
+  perfumes: "perfumes",
+  calzado: "calzado",
+  ropa: "ropa",
+  accesorios: "accesorios",
+};
+
 const ProductDetail = ({ product }: ProductDetailProps) => {
   const [liked, setLiked] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -62,6 +70,8 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
         }))
       : null;
 
+  const categoryLabel = categoryLabels[product.categoria] ?? product.categoria;
+
   return (
     <section className="bg-white py-12">
       <div className="container-custom">
@@ -74,14 +84,23 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
                   ¡En Oferta!
                 </div>
               )}
-              <ImageGallery
-                items={galleryItems}
-                showPlayButton={false}
-                showNav={true}
-                thumbnailPosition={isFullscreen ? "bottom" : "bottom"}
-                onScreenChange={(fullscreen) => setIsFullscreen(fullscreen)}
-                lazyLoad={true}
-              />
+              <div className={product.vendido ? "opacity-50 grayscale" : ""}>
+                <ImageGallery
+                  items={galleryItems}
+                  showPlayButton={false}
+                  showNav={true}
+                  thumbnailPosition={isFullscreen ? "bottom" : "bottom"}
+                  onScreenChange={(fullscreen) => setIsFullscreen(fullscreen)}
+                  lazyLoad={true}
+                />
+              </div>
+              {product.vendido && (
+                <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                  <span className="bg-gray-800/80 text-white text-lg font-bold px-6 py-3 rounded-md tracking-widest uppercase">
+                    Vendido
+                  </span>
+                </div>
+              )}
             </div>
           ) : (
             <div className="relative overflow-hidden rounded-lg shadow-md aspect-square">
@@ -96,8 +115,15 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
-                className="object-cover"
+                className={`object-cover ${product.vendido ? "opacity-50 grayscale" : ""}`}
               />
+              {product.vendido && (
+                <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                  <span className="bg-gray-800/80 text-white text-lg font-bold px-6 py-3 rounded-md tracking-widest uppercase">
+                    Vendido
+                  </span>
+                </div>
+              )}
             </div>
           )}
 
@@ -153,6 +179,11 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
                     ¡EN OFERTA!
                   </span>
                 )}
+                {product.vendido && (
+                  <span className="bg-gray-700 text-white text-xs font-semibold px-2 py-1 rounded-md">
+                    VENDIDO
+                  </span>
+                )}
               </div>
 
               {/* Precios */}
@@ -206,18 +237,44 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
                     </div>
                   </div>
                 )}
+
+                {/* Vendido banner */}
+                {product.vendido && (
+                  <div className="flex items-center gap-3 p-3 bg-gray-100 border border-gray-300 rounded-lg">
+                    <div>
+                      <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">
+                        Este artículo ya no está disponible
+                      </p>
+                      <p className="text-lg font-bold text-gray-600">
+                        Producto vendido
+                      </p>
+                      <p className="text-xs text-gray-400 mt-1">
+                        Contáctanos para consultar artículos similares
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
 
               <p className="text-gray-600 mb-8">{product.descripcion}</p>
             </div>
 
             <div className="mt-auto">
-              <Link
-                href={`/contacto?producto=${product.id}`}
-                className="w-full bg-brishop-600 hover:bg-brishop-700 text-white py-3 px-6 rounded-md transition-all duration-300 flex justify-center items-center font-medium text-lg shadow-md hover:shadow-lg"
-              >
-                Contactar para comprar
-              </Link>
+              {product.vendido ? (
+                <Link
+                  href={`/categoria/${product.categoria}`}
+                  className="w-full bg-gray-700 hover:bg-gray-800 text-white py-3 px-6 rounded-md transition-all duration-300 flex justify-center items-center font-medium text-lg shadow-md hover:shadow-lg"
+                >
+                  Ver más {categoryLabel}
+                </Link>
+              ) : (
+                <Link
+                  href={`/contacto?producto=${product.id}`}
+                  className="w-full bg-brishop-600 hover:bg-brishop-700 text-white py-3 px-6 rounded-md transition-all duration-300 flex justify-center items-center font-medium text-lg shadow-md hover:shadow-lg"
+                >
+                  Contactar para comprar
+                </Link>
+              )}
             </div>
           </div>
         </div>
