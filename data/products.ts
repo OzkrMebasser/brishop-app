@@ -125,9 +125,10 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "tote",
+    vendido: true,
   },
   {
-    nombre: "Bolsa Guess Avon Paris Caramel",
+    nombre: "Bolsa Guess Avon Park Caramel",
     imagen:
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776123742/06-Bolsa-Guess-Avon-Park-Caramel-1_f25jrx.webp",
     imagenes: [
@@ -143,6 +144,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "tote",
+    vendido: true,
   },
 
   //nuevos
@@ -163,6 +165,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "tote",
     enOferta: false,
     precioOferta: 0,
+    vendido: true,
   },
   {
     nombre: "Bolsa Guess modelo Oona Logo Top-Zip blanco",
@@ -203,6 +206,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "satchel",
     enOferta: false,
     precioOferta: 0,
+    vendido: true,
   },
   {
     nombre: "Bolsa Steve Madden Donegal Negra",
@@ -262,6 +266,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "Shoulder",
     enOferta: false,
     precioOferta: 0,
+    vendido: true,
   },
   {
     nombre: "Bolsa Aldo Auralie Mini Satchel",
@@ -281,6 +286,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "satchel",
     enOferta: false,
     precioOferta: 0,
+    vendido: true,
   },
   {
     nombre: "Bolsa Steve Madden en color borgoña",
@@ -376,6 +382,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "tote",
     enOferta: false,
     precioOferta: 0,
+    vendido: true,
   },
   {
     nombre: "Bolsa Nine West Lona",
@@ -395,6 +402,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "satchel",
     enOferta: false,
     precioOferta: 0,
+    vendido: true,
   },
   {
     nombre: "Bolsa Tommy Hilfiger Kinley II",
@@ -685,6 +693,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "bucket",
     enOferta: false,
     precioOferta: 0,
+    vendido: true,
   },
   {
     nombre: "Bolsa Guess Berlyn Denim Large",
@@ -726,6 +735,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "tote",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Cartera Michael Kors Saffiano Lavanda",
@@ -784,6 +794,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "crossbody",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Steve Madden B-Byvonne Beige",
@@ -882,6 +893,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "satchel",
     enOferta: true,
     precioOferta: 1500,
+    destacado: true,
   },
   {
     nombre: "Bolsa Steve Madden Blexi Nude",
@@ -944,6 +956,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "tote",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Steve Madden Bverra Tote",
@@ -1084,6 +1097,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "tote",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Guess Eldoria Camera",
@@ -1124,6 +1138,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "Shoulder",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Guess Elise Crossbody Clutch Hueso",
@@ -1244,6 +1259,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "carteras",
+    vendido: true
   },
   {
     nombre: "Cartera Tommy Hilfiger Continental con Logotipo Grabado",
@@ -1870,6 +1886,8 @@ const rawProducts: RawProduct[] = [
     marca: "Sabrina Carpenter",
     sexo: "dama",
     subCategoria: "Gourmand",
+    vendido: true,
+    
   },
   {
     nombre: "Wonderlust Michael Kors",
@@ -1923,6 +1941,7 @@ const rawProducts: RawProduct[] = [
     marca: "Tous",
     sexo: "dama",
     subCategoria: "Floral",
+    vendido: true,
   },
   {
     nombre: "Ariana Grande Ari",
@@ -1936,6 +1955,7 @@ const rawProducts: RawProduct[] = [
     marca: "Ariana Grande",
     sexo: "dama",
     subCategoria: "Gourmand",
+    vendido: true
   },
   // Body Mists
   {
@@ -2303,6 +2323,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "sandalias",
     talla: "6 Mex",
+    vendido: true
   },
   {
     nombre: "Sandalia de Piso Guess Color Crema",
@@ -2443,6 +2464,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "tenis",
     talla: "6 Mex",
+    vendido: true
   },
   {
     nombre: "Tenis Reebok Chunky Color Beige y Azul",
@@ -2499,6 +2521,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "tenis",
     talla: "5.5 Mex",
+    vendido: true
   },
   {
     nombre: "Tenis Guees Blancos con Charms",
@@ -2513,6 +2536,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "tenis",
     talla: "4.5 Mex",
+    destacado: true,
   },
   {
     nombre: "Tenis Guees Blancos Estilo Samba",
@@ -2527,7 +2551,8 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "tenis",
     talla: "5.5 Mex",
-    destacado: true,
+    
+    vendido: true
   },
   {
     nombre: "Tenis Tommy Hilfiger Eryanne Blanco con rojo",
@@ -2743,7 +2768,8 @@ const rawProducts: RawProduct[] = [
     marca: "Columbia",
     sexo: "caballero",
     subCategoria: "Gorras",
-    destacado: true,
+    
+    vendido: true
   },
   {
     nombre: "Gorra Columbia, modelo Snapback Trucker Color Durazno",
@@ -2757,6 +2783,7 @@ const rawProducts: RawProduct[] = [
     marca: "Columbia",
     sexo: "caballero",
     subCategoria: "Gorras",
+    vendido: true
   },
   {
     nombre: "Gorra Columbia PFG Snapback Trucker en color azul cielo",
@@ -2770,6 +2797,7 @@ const rawProducts: RawProduct[] = [
     marca: "Columbia",
     sexo: "caballero",
     subCategoria: "Gorras",
+    vendido: true,
   },
   {
     nombre: "Gorra Adidas Saturday Relaxed en color beige",
@@ -2783,6 +2811,7 @@ const rawProducts: RawProduct[] = [
     marca: "Adidas",
     sexo: "dama",
     subCategoria: "Gorras",
+    vendido: true
   },
   {
     nombre: "Gorra Champion Beige con Morado",
@@ -2965,6 +2994,7 @@ const rawProducts: RawProduct[] = [
     marca: "Columbia",
     sexo: "caballero",
     subCategoria: "billeteras",
+    vendido: true
   },
   {
     nombre: "Billetera Columbia Bicolor Brown & Tan",
@@ -2981,6 +3011,7 @@ const rawProducts: RawProduct[] = [
     marca: "Columbia",
     sexo: "caballero",
     subCategoria: "billeteras",
+    vendido: true
   },
   {
     nombre: "Billetera Columbia Brown con Doble Costura Central",
@@ -2998,6 +3029,7 @@ const rawProducts: RawProduct[] = [
     marca: "Columbia",
     sexo: "caballero",
     subCategoria: "billeteras",
+    vendido:true
   },
   {
     nombre: 'Cosmetiquera Guess "Logo Love" Blush',
@@ -3102,6 +3134,7 @@ const rawProducts: RawProduct[] = [
     sexo: "caballero",
     subCategoria: "playeras",
     talla: "Grande",
+    vendido: true
   },
   {
     nombre: "Playera Tommy Hilfiger Essential Beige",
