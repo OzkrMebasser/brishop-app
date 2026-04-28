@@ -29,7 +29,7 @@ export interface Product {
   talla?: string;
   enOferta?: boolean;
   precioOferta?: number;
-  vendido?: boolean; 
+  vendido?: boolean;
 }
 
 type RawProduct = Omit<Product, "id" | "abonos" | "precioDesde">;
@@ -1614,6 +1614,7 @@ const rawProducts: RawProduct[] = [
     sexo: "caballero",
     subCategoria: "Fougère",
     nuevo: true,
+    vendido: true,
   },
   {
     nombre: "Nautica Voyage",
@@ -1641,6 +1642,7 @@ const rawProducts: RawProduct[] = [
     sexo: "caballero",
     subCategoria: "Fougère",
     nuevo: true,
+    vendido: true,
   },
   {
     nombre: "Mont Blanc Presence",
@@ -1693,6 +1695,7 @@ const rawProducts: RawProduct[] = [
     marca: "Lataffa",
     sexo: "caballero",
     subCategoria: "Oriental",
+    vendido: true,
   },
   {
     nombre: "Moschino Toy Boy",
@@ -1760,6 +1763,7 @@ const rawProducts: RawProduct[] = [
     marca: "Oscar de la Renta",
     sexo: "dama",
     subCategoria: "Floral",
+     vendido: true,
   },
   {
     nombre: "Lattafa Yara Rosa",
@@ -1773,6 +1777,7 @@ const rawProducts: RawProduct[] = [
     marca: "Lattafa",
     sexo: "dama",
     subCategoria: "Oriental",
+    vendido: true,
   },
   {
     nombre: "Lattafa Yara Blanca",
@@ -1838,6 +1843,7 @@ const rawProducts: RawProduct[] = [
     marca: "Lattafa",
     sexo: "dama",
     subCategoria: "Oriental",
+    vendido: true,
   },
   {
     nombre: "Coach New York",
@@ -1944,6 +1950,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true,
   },
   {
     nombre: "Covered in Roses",
@@ -1996,6 +2003,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true,
   },
   {
     nombre: "Pink Obsessed",
@@ -2061,6 +2069,7 @@ const rawProducts: RawProduct[] = [
     marca: "Victoria Secret",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true,
   },
   {
     nombre: "Coconut Passion Brulee",
@@ -2139,6 +2148,7 @@ const rawProducts: RawProduct[] = [
     marca: "Victoria Secret",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true,
   },
   {
     nombre: "Love Spell",
@@ -2773,7 +2783,8 @@ const rawProducts: RawProduct[] = [
     marca: "Adidas",
     sexo: "dama",
     subCategoria: "Gorras",
-  },{
+  },
+  {
     nombre: "Gorra Champion Beige con Morado",
     imagen:
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776386682/14-Gorra-Champion-Beige-con-Morado-1_onaogs.webp",
@@ -2828,7 +2839,7 @@ const rawProducts: RawProduct[] = [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776387531/18-Cartera-Caballero-Guess-3_zuwpvi.webp",
     ],
     descripcion:
-      "Redefine tu presencia con esta pieza maestra de silueta estructurada en un impecable tono vino. Su diseño \"belted\" con el icónico logo dorado central es el toque de distinción que robará todas las miradas en cualquier ocasión. El upgrade de lujo definitivo para una imagen impecable y llena de sofisticación.",
+      'Redefine tu presencia con esta pieza maestra de silueta estructurada en un impecable tono vino. Su diseño "belted" con el icónico logo dorado central es el toque de distinción que robará todas las miradas en cualquier ocasión. El upgrade de lujo definitivo para una imagen impecable y llena de sofisticación.',
     precioContado: 680,
     precioCredito: 680,
     categoria: "accesorios",
@@ -2854,7 +2865,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "billeteras",
   },
   {
-    nombre: "Billetera Columbia \"Passcase\" en Piel Texturizada",
+    nombre: 'Billetera Columbia "Passcase" en Piel Texturizada',
     imagen:
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776388545/20-Cartera-Columbia-Passcase-01_zxzst0.webp",
     imagenes: [
@@ -2989,7 +3000,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "billeteras",
   },
   {
-    nombre: "Cosmetiquera Guess \"Logo Love\" Blush",
+    nombre: 'Cosmetiquera Guess "Logo Love" Blush',
     imagen:
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776392382/28-Cosmetiquera-Guess-Logo-Love-Blush-1_evwvde.jpg",
     imagenes: [
@@ -3013,7 +3024,7 @@ const rawProducts: RawProduct[] = [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776392812/29-Billetera-Michael-Kors-Slim-Billfold-Signature-2_ubyjoy.webp",
     ],
     descripcion:
-      "Lleva la exclusividad contigo con esta cartera Michael Kors original, destacada por su icónico estampado de logotipos sobre un elegante fondo chocolate. Su diseño \"Slim\" es perfecto para el hombre que busca un perfil delgado sin sacrificar espacio, combinando el lujo moderno con la máxima funcionalidad para tus tarjetas y billetes.",
+      'Lleva la exclusividad contigo con esta cartera Michael Kors original, destacada por su icónico estampado de logotipos sobre un elegante fondo chocolate. Su diseño "Slim" es perfecto para el hombre que busca un perfil delgado sin sacrificar espacio, combinando el lujo moderno con la máxima funcionalidad para tus tarjetas y billetes.',
     precioContado: 999,
     precioCredito: 999,
     categoria: "accesorios",
@@ -3022,16 +3033,17 @@ const rawProducts: RawProduct[] = [
     subCategoria: "billeteras",
     enOferta: true,
     precioOferta: 700,
-    
   },
   // Ropa
   {
     nombre: "Playera Karl Lagerfeld Paris Logo",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776741309/01-Playera-Karl-Lagerfeld-Paris-Logo-M_coug6z.jpg",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776741309/01-Playera-Karl-Lagerfeld-Paris-Logo-M_coug6z.jpg",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776741309/01-Playera-Karl-Lagerfeld-Paris-Logo-M_coug6z.jpg",
     ],
-    descripcion: "Luce un estilo icónico y sofisticado con esta playera original de algodón premium. Su diseño minimalista en blanco con el logotipo de Karl Lagerfeld y el detalle \"Kark\" en contraste ofrece un look contemporáneo y de alta gama, ideal para quienes buscan comodidad sin sacrificar la elegancia.",
+    descripcion:
+      'Luce un estilo icónico y sofisticado con esta playera original de algodón premium. Su diseño minimalista en blanco con el logotipo de Karl Lagerfeld y el detalle "Kark" en contraste ofrece un look contemporáneo y de alta gama, ideal para quienes buscan comodidad sin sacrificar la elegancia.',
     precioContado: 750,
     precioCredito: 750,
     categoria: "ropa",
@@ -3042,11 +3054,13 @@ const rawProducts: RawProduct[] = [
   },
   {
     nombre: "Playera Nautica Solid Crew Neck Verde",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747627/02-Playera-Nautica-Verde-L_wm7syp.jpg",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747627/02-Playera-Nautica-Verde-L_wm7syp.jpg",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747627/02-Playera-Nautica-Verde-L_wm7syp.jpg",
     ],
-    descripcion: "Disfruta de la máxima comodidad con esta playera original de algodón suave en un vibrante tono verde. Su diseño de cuello redondo y corte clásico, con el icónico logo de la clase J bordado en el pecho, es perfecto para un look casual, fresco y relajado en cualquier ocasión.",
+    descripcion:
+      "Disfruta de la máxima comodidad con esta playera original de algodón suave en un vibrante tono verde. Su diseño de cuello redondo y corte clásico, con el icónico logo de la clase J bordado en el pecho, es perfecto para un look casual, fresco y relajado en cualquier ocasión.",
     precioContado: 560,
     precioCredito: 560,
     categoria: "ropa",
@@ -3057,11 +3071,13 @@ const rawProducts: RawProduct[] = [
   },
   {
     nombre: "Playera Tommy Hilfiger Essential Cotton Azul Marino",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747625/03-Playera-Tommy-Marino-L_tzi3mc.webp",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747625/03-Playera-Tommy-Marino-L_tzi3mc.webp",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747625/03-Playera-Tommy-Marino-L_tzi3mc.webp",
     ],
-    descripcion: "Eleva tu estilo diario con esta playera original de corte regular, confeccionada en puro algodón ligero para máxima frescura. Su diseño limpio de cuello redondo destaca por el icónico logo de la bandera bordado en el pecho, ofreciendo un look premium y atemporal que combina con todo",
+    descripcion:
+      "Eleva tu estilo diario con esta playera original de corte regular, confeccionada en puro algodón ligero para máxima frescura. Su diseño limpio de cuello redondo destaca por el icónico logo de la bandera bordado en el pecho, ofreciendo un look premium y atemporal que combina con todo",
     precioContado: 600,
     precioCredito: 600,
     categoria: "ropa",
@@ -3072,11 +3088,13 @@ const rawProducts: RawProduct[] = [
   },
   {
     nombre: "Playera Peanuts Snoopy Cowboy Edition",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747625/04-Playera-Peanuts-Verde-L_dwdyyk.webp",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747625/04-Playera-Peanuts-Verde-L_dwdyyk.webp",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747625/04-Playera-Peanuts-Verde-L_dwdyyk.webp",
     ],
-    descripcion: "Dale un toque divertido y único a tu estilo con esta playera original de Snoopy vaquero. Confeccionada en un suave tono verde menta con un bordado central de alta calidad, ofrece un diseño creativo, fresco y lleno de personalidad para tus días más relajados.",
+    descripcion:
+      "Dale un toque divertido y único a tu estilo con esta playera original de Snoopy vaquero. Confeccionada en un suave tono verde menta con un bordado central de alta calidad, ofrece un diseño creativo, fresco y lleno de personalidad para tus días más relajados.",
     precioContado: 500,
     precioCredito: 500,
     categoria: "ropa",
@@ -3087,11 +3105,13 @@ const rawProducts: RawProduct[] = [
   },
   {
     nombre: "Playera Tommy Hilfiger Essential Beige",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747626/05-Playera-Tommy-Beige-L_edsn3p.webp",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747626/05-Playera-Tommy-Beige-L_edsn3p.webp",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776747626/05-Playera-Tommy-Beige-L_edsn3p.webp",
     ],
-    descripcion: "Logra un look impecable y sofisticado con esta playera original en un versátil tono beige. Confeccionada en algodón de alta calidad con el icónico logo de la bandera bordado, es la prenda básica de lujo que ofrece frescura y elegancia para cualquier ocasión en el día a día.",
+    descripcion:
+      "Logra un look impecable y sofisticado con esta playera original en un versátil tono beige. Confeccionada en algodón de alta calidad con el icónico logo de la bandera bordado, es la prenda básica de lujo que ofrece frescura y elegancia para cualquier ocasión en el día a día.",
     precioContado: 600,
     precioCredito: 600,
     categoria: "ropa",
@@ -3102,11 +3122,13 @@ const rawProducts: RawProduct[] = [
   },
   {
     nombre: "Playera Tommy Hilfiger Essential Azul Cielo",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776748207/06-Playera-Tommy-Azul-Cielo-L_dntvke.webp",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776748207/06-Playera-Tommy-Azul-Cielo-L_dntvke.webp",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776748207/06-Playera-Tommy-Azul-Cielo-L_dntvke.webp",
     ],
-    descripcion: "Dale un aire fresco a tu estilo con esta playera original en un suave tono azul melange. Confeccionada en algodón premium ultra ligero, destaca por el icónico logo de la bandera bordado en el pecho, ofreciendo comodidad y un look impecable para tus días bajo el sol.",
+    descripcion:
+      "Dale un aire fresco a tu estilo con esta playera original en un suave tono azul melange. Confeccionada en algodón premium ultra ligero, destaca por el icónico logo de la bandera bordado en el pecho, ofreciendo comodidad y un look impecable para tus días bajo el sol.",
     precioContado: 600,
     precioCredito: 600,
     categoria: "ropa",
@@ -3117,11 +3139,13 @@ const rawProducts: RawProduct[] = [
   },
   {
     nombre: "Playera Tommy Hilfiger Classic Blue Melange",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776748210/07-Playera-Tommy-Azul-M_uyltkg.jpg",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776748210/07-Playera-Tommy-Azul-M_uyltkg.jpg",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776748210/07-Playera-Tommy-Azul-M_uyltkg.jpg",
     ],
-    descripcion: "Luce un estilo auténtico con esta playera original en un fresco tono azul melange. Su tejido de algodón premium ofrece una suavidad excepcional y un ajuste cómodo, detallada con el icónico logo bordado y cinta distintiva en el cuello. Calidad y diseño de clase mundial para tu outfit diario.",
+    descripcion:
+      "Luce un estilo auténtico con esta playera original en un fresco tono azul melange. Su tejido de algodón premium ofrece una suavidad excepcional y un ajuste cómodo, detallada con el icónico logo bordado y cinta distintiva en el cuello. Calidad y diseño de clase mundial para tu outfit diario.",
     precioContado: 600,
     precioCredito: 600,
     categoria: "ropa",
@@ -3132,11 +3156,13 @@ const rawProducts: RawProduct[] = [
   },
   {
     nombre: "Playera Tommy Hilfiger Essential Rojo Vibrante",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776748215/08-Playera-Tommy-Roja-M_h8qpq1.webp",
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776748215/08-Playera-Tommy-Roja-M_h8qpq1.webp",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776748215/08-Playera-Tommy-Roja-M_h8qpq1.webp",
     ],
-    descripcion: "Impacta con el estilo audaz de esta playera original en un intenso color rojo. Fabricada en algodón premium de tacto suave, cuenta con el clásico logo de la bandera bordado en el pecho, ofreciendo un look moderno, dinámico y lleno de personalidad para cualquier día de la semana.",
+    descripcion:
+      "Impacta con el estilo audaz de esta playera original en un intenso color rojo. Fabricada en algodón premium de tacto suave, cuenta con el clásico logo de la bandera bordado en el pecho, ofreciendo un look moderno, dinámico y lleno de personalidad para cualquier día de la semana.",
     precioContado: 600,
     precioCredito: 600,
     categoria: "ropa",
@@ -3146,12 +3172,14 @@ const rawProducts: RawProduct[] = [
     talla: "Mediana",
   },
   {
-    nombre: "Blusa Guess \"Bisous from Paris\" en Color Vino",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776788380/09-Playeras-Guess-Vino-M_ssfadp.webp",
+    nombre: 'Blusa Guess "Bisous from Paris" en Color Vino',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776788380/09-Playeras-Guess-Vino-M_ssfadp.webp",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776788380/09-Playeras-Guess-Vino-M_ssfadp.webp",
     ],
-    descripcion: "Luce un estilo romántico y sofisticado con esta blusa original en un profundo tono vino. Destaca por su elegante gráfico de la Torre Eiffel con detalles brillantes y la frase \"Bisous Guess\", ofreciendo un ajuste favorecedor y femenino. El toque parisino ideal para elevar tu look casual con mucho glamour.",
+    descripcion:
+      'Luce un estilo romántico y sofisticado con esta blusa original en un profundo tono vino. Destaca por su elegante gráfico de la Torre Eiffel con detalles brillantes y la frase "Bisous Guess", ofreciendo un ajuste favorecedor y femenino. El toque parisino ideal para elevar tu look casual con mucho glamour.',
     precioContado: 585,
     precioCredito: 585,
     categoria: "ropa",
@@ -3161,12 +3189,14 @@ const rawProducts: RawProduct[] = [
     talla: "Mediana",
   },
   {
-    nombre: "Playera Guess \"Sparkle Heart\" en Rosa Fucsia",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776788388/10-Playera-Guess-Rosa-S_xtejcn.webp",
+    nombre: 'Playera Guess "Sparkle Heart" en Rosa Fucsia',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776788388/10-Playera-Guess-Rosa-S_xtejcn.webp",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776788388/10-Playera-Guess-Rosa-S_xtejcn.webp",
     ],
-    descripcion: "Dale brillo a tu estilo con esta playera original de corte favorecedor. Su diseño destaca por un corazón central decorado con delicadas aplicaciones de pedrería y el logo de Guess bordado, combinando comodidad y glamour en una sola prenda. El toque de color perfecto para un look moderno y lleno de luz.",
+    descripcion:
+      "Dale brillo a tu estilo con esta playera original de corte favorecedor. Su diseño destaca por un corazón central decorado con delicadas aplicaciones de pedrería y el logo de Guess bordado, combinando comodidad y glamour en una sola prenda. El toque de color perfecto para un look moderno y lleno de luz.",
     precioContado: 585,
     precioCredito: 585,
     categoria: "ropa",
@@ -3176,12 +3206,14 @@ const rawProducts: RawProduct[] = [
     talla: "Chica",
   },
   {
-    nombre: "Playera Guess \"Los Angeles\" en Tono Salmón",
-    imagen: "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776880121/11-Payera-Guess-Salmon-XL_r6xx89.webp",
+    nombre: 'Playera Guess "Los Angeles" en Tono Salmón',
+    imagen:
+      "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776880121/11-Payera-Guess-Salmon-XL_r6xx89.webp",
     imagenes: [
       "https://res.cloudinary.com/djlgwpnqd/image/upload/v1776880121/11-Payera-Guess-Salmon-XL_r6xx89.webp",
     ],
-    descripcion: "Luce un estilo relajado y chic con esta playera original de algodón ultra suave. Su diseño clásico resalta con el logotipo de Guess Los Angeles bordado en relieve a tono, ofreciendo un look minimalista y sofisticado. La prenda ideal para combinar con tus jeans favoritos y brillar con comodidad.",
+    descripcion:
+      "Luce un estilo relajado y chic con esta playera original de algodón ultra suave. Su diseño clásico resalta con el logotipo de Guess Los Angeles bordado en relieve a tono, ofreciendo un look minimalista y sofisticado. La prenda ideal para combinar con tus jeans favoritos y brillar con comodidad.",
     precioContado: 585,
     precioCredito: 585,
     categoria: "ropa",

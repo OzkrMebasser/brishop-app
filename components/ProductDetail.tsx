@@ -71,6 +71,7 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
       : null;
 
   const categoryLabel = categoryLabels[product.categoria] ?? product.categoria;
+  const isDisabled = product.enOferta || product.vendido;
 
   return (
     <section className="bg-white py-12">
@@ -189,30 +190,30 @@ const ProductDetail = ({ product }: ProductDetailProps) => {
               {/* Precios */}
               <div className="flex flex-col gap-4 mb-6">
                 {/* Precio contado */}
-                <div className={`flex items-center gap-3 p-3 rounded-lg border ${product.enOferta ? "bg-gray-50 border-gray-100 opacity-60" : "bg-green-50 border-green-100"}`}>
+                <div className={`flex items-center gap-3 p-3 rounded-lg border ${isDisabled ? "bg-gray-50 border-gray-100 opacity-60" : "bg-green-50 border-green-100"}`}>
                   <div>
-                    <p className={`text-xs font-medium uppercase tracking-wide ${product.enOferta ? "text-gray-400" : "text-green-600"}`}>
+                    <p className={`text-xs font-medium uppercase tracking-wide ${isDisabled ? "text-gray-400" : "text-green-600"}`}>
                       Precio de contado
                     </p>
-                    <p className={`text-2xl font-bold ${product.enOferta ? "text-gray-400 line-through" : "text-green-700"}`}>
+                    <p className={`text-2xl font-bold ${isDisabled ? "text-gray-400 line-through" : "text-green-700"}`}>
                       {formatPrice(product.precioContado)}
                     </p>
                   </div>
                 </div>
 
                 {/* Precio crédito */}
-                <div className={`flex items-center gap-3 p-3 rounded-lg border ${product.enOferta ? "bg-gray-50 border-gray-100 opacity-60" : "bg-brishop-50 border-brishop-100"}`}>
+                <div className={`flex items-center gap-3 p-3 rounded-lg border ${isDisabled ? "bg-gray-50 border-gray-100 opacity-60" : "bg-brishop-50 border-brishop-100"}`}>
                   <div className="flex-1">
-                    <p className={`text-xs font-medium uppercase tracking-wide ${product.enOferta ? "text-gray-400" : "text-brishop-600"}`}>
+                    <p className={`text-xs font-medium uppercase tracking-wide ${isDisabled ? "text-gray-400" : "text-brishop-600"}`}>
                       Precio a crédito
                     </p>
-                    <p className={`text-2xl font-bold ${product.enOferta ? "text-gray-400 line-through" : "text-brishop-800"}`}>
+                    <p className={`text-2xl font-bold ${isDisabled ? "text-gray-400 line-through" : "text-brishop-800"}`}>
                       {formatPrice(product.precioCredito)}
                     </p>
                   </div>
-                  <div className={`text-right border-l pl-3 ${product.enOferta ? "border-gray-100" : "border-brishop-100"}`}>
+                  <div className={`text-right border-l pl-3 ${isDisabled ? "border-gray-100" : "border-brishop-100"}`}>
                     <p className="text-xs text-gray-400">Desde</p>
-                    <p className={`text-2xl font-bold ${product.enOferta ? "text-gray-400 line-through" : "text-brishop-800"}`}>
+                    <p className={`text-2xl font-bold ${isDisabled ? "text-gray-400 line-through" : "text-brishop-800"}`}>
                       {formatPrice(product.precioDesde)}
                     </p>
                     <p className="text-xs text-gray-400">
