@@ -67,8 +67,17 @@ const VendidosPage = () => {
 
   return (
     <main className="container-custom py-24">
-      <h1 className="text-2xl font-medium text-gray-900 mb-8">✅ Vendidos</h1>
-
+      
+      
+<div className="flex items-center justify-between mb-8">
+  <h1 className="text-2xl font-medium text-gray-900">✅ Vendidos</h1>
+  <Link
+    href="/inventario"
+    className="text-sm px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-brishop-600 hover:text-white hover:border-brishop-600 transition-colors duration-200"
+  >
+    Ver Inventario →
+  </Link>
+</div>
       {/* Filtros */}
       <div className="flex flex-wrap gap-2 mb-8">
         <button

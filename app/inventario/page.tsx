@@ -20,7 +20,7 @@ const InventarioPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const categoriesWithStock = categories.filter((cat) =>
-    noVendidos.some((p) => p.categoria === cat.id)
+    noVendidos.some((p) => p.categoria === cat.id),
   );
 
   const filtered = useMemo(
@@ -28,13 +28,13 @@ const InventarioPage = () => {
       activeCategory === "todos"
         ? noVendidos
         : noVendidos.filter((p) => p.categoria === activeCategory),
-    [activeCategory, noVendidos]
+    [activeCategory, noVendidos],
   );
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
   const paginated = filtered.slice(
     (currentPage - 1) * PAGE_SIZE,
-    currentPage * PAGE_SIZE
+    currentPage * PAGE_SIZE,
   );
 
   const handleCategoryChange = (cat: string) => {
@@ -68,7 +68,15 @@ const InventarioPage = () => {
 
   return (
     <main className="container-custom py-24">
-      <h1 className="text-2xl font-medium text-gray-900 mb-8">📦 Inventario</h1>
+      <div className="flex items-center justify-between mb-8">
+        <h1 className="text-2xl font-medium text-gray-900">📦 Inventario</h1>
+        <Link
+          href="/total-ventas"
+          className="text-sm px-4 py-2 rounded-lg border border-gray-300 text-gray-600 hover:bg-brishop-600 hover:text-white hover:border-brishop-600 transition-colors duration-200"
+        >
+          Ver Total Ventas →
+        </Link>
+      </div>
 
       {/* Filtros */}
       <div className="flex flex-wrap gap-2 mb-8">
@@ -95,22 +103,35 @@ const InventarioPage = () => {
       {/* Totales — siempre visibles */}
       <div className="flex flex-wrap gap-4 mb-10">
         <div className="bg-white border border-gray-200 rounded-xl px-6 py-4 min-w-[150px]">
-          <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">Piezas</p>
-          <p className="text-2xl font-semibold text-brishop-800">{filtered.length}</p>
+          <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">
+            Piezas
+          </p>
+          <p className="text-2xl font-semibold text-brishop-800">
+            {filtered.length}
+          </p>
           <p className="text-xs text-gray-400 mt-1">
             {activeCategory === "todos"
               ? "todas las categorías"
-              : categoriesWithStock.find((c) => c.id === activeCategory)?.nombre}
+              : categoriesWithStock.find((c) => c.id === activeCategory)
+                  ?.nombre}
           </p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl px-6 py-4 min-w-[150px]">
-          <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">Valor contado</p>
-          <p className="text-2xl font-semibold text-brishop-800">{fmt(totalContado)}</p>
+          <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">
+            Valor contado
+          </p>
+          <p className="text-2xl font-semibold text-brishop-800">
+            {fmt(totalContado)}
+          </p>
           <p className="text-xs text-gray-400 mt-1">precio de contado</p>
         </div>
         <div className="bg-white border border-gray-200 rounded-xl px-6 py-4 min-w-[150px]">
-          <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">Valor crédito</p>
-          <p className="text-2xl font-semibold text-brishop-800">{fmt(totalCredito)}</p>
+          <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">
+            Valor crédito
+          </p>
+          <p className="text-2xl font-semibold text-brishop-800">
+            {fmt(totalCredito)}
+          </p>
           <p className="text-xs text-gray-400 mt-1">precio de crédito</p>
         </div>
       </div>
@@ -215,7 +236,8 @@ const InventarioPage = () => {
               {/* Última página + ellipsis */}
               {getPageRange()[getPageRange().length - 1] < totalPages && (
                 <>
-                  {getPageRange()[getPageRange().length - 1] < totalPages - 1 && (
+                  {getPageRange()[getPageRange().length - 1] <
+                    totalPages - 1 && (
                     <span className="px-2 text-gray-400">…</span>
                   )}
                   <button
@@ -229,7 +251,9 @@ const InventarioPage = () => {
 
               {/* Siguiente */}
               <button
-                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                onClick={() =>
+                  setCurrentPage((p) => Math.min(totalPages, p + 1))
+                }
                 disabled={currentPage === totalPages}
                 className="px-3 py-2 rounded-lg text-sm border border-gray-300 text-gray-600 hover:border-gray-500 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
               >
