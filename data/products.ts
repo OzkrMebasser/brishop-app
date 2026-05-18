@@ -266,7 +266,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "Shoulder",
     enOferta: false,
     precioOferta: 0,
-    vendido: true,
+    vendido: false,
   },
   {
     nombre: "Bolsa Aldo Auralie Mini Satchel",
@@ -1616,6 +1616,7 @@ const rawProducts: RawProduct[] = [
     marca: "Nautica",
     sexo: "caballero",
     subCategoria: "Cítrica",
+    vendido: true
   },
   {
     nombre: "Guess Seductive Noir",
@@ -1984,6 +1985,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true,
   },
   {
     nombre: "A Thousand Wishes",
@@ -1997,6 +1999,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "In The Stars",
@@ -2010,6 +2013,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Fruity Musk",
@@ -2037,6 +2041,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true 
   },
   {
     nombre: "Japanese Cherry Blossom",
@@ -2050,6 +2055,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Gingham",
@@ -2063,6 +2069,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Lost in Santal",
@@ -2076,6 +2083,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Lavender & Vanilla",
@@ -2103,6 +2111,7 @@ const rawProducts: RawProduct[] = [
     marca: "Victoria Secret",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Lotus Cloud",
@@ -2116,6 +2125,7 @@ const rawProducts: RawProduct[] = [
     marca: "Victoria Secret",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Mango Temptation",
@@ -2129,6 +2139,7 @@ const rawProducts: RawProduct[] = [
     marca: "Victoria Secret",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Midnight Bloom",
@@ -2142,6 +2153,7 @@ const rawProducts: RawProduct[] = [
     marca: "Victoria Secret",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Sweet Sugared Violet",
@@ -2182,6 +2194,7 @@ const rawProducts: RawProduct[] = [
     marca: "Victoria Secret",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Sundrenched Blooms",
@@ -2195,6 +2208,7 @@ const rawProducts: RawProduct[] = [
     marca: "Victoria Secret",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Velvet Petals",
@@ -2208,6 +2222,7 @@ const rawProducts: RawProduct[] = [
     marca: "Victoria Secret",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
 
   // Calzado
@@ -2521,7 +2536,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "tenis",
     talla: "5.5 Mex",
-    vendido: true
+    vendido: false
   },
   {
     nombre: "Tenis Guees Blancos con Charms",
