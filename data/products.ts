@@ -72,6 +72,7 @@ const rawProducts: RawProduct[] = [
     marca: "Aldo",
     sexo: "dama",
     subCategoria: "Hobo",
+    vendido: true
   },
   {
     nombre: "Bolsa Aldo Paltani Negra",
@@ -90,6 +91,7 @@ const rawProducts: RawProduct[] = [
     marca: "Aldo",
     sexo: "dama",
     subCategoria: "tote",
+    vendido: true
   },
   {
     nombre: "Bolsa Guess Speranza Carryall Chocolate",
@@ -108,6 +110,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "tote",
+    vendido: true
   },
   {
     nombre: "Bolsa Guess Speranza Carryall Marino",
@@ -187,6 +190,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "crossbody",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa DKNY Willa Satchel Bag",
@@ -486,6 +490,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "crossbody",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   // 24
   {
@@ -507,6 +512,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "satchel",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
 
   //25
@@ -529,6 +535,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "crossbody",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
 
   //26
@@ -632,6 +639,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "crossbody",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Guess Estampado de Cerezas",
@@ -672,6 +680,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "tote",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Michael Kors Carson",
@@ -714,6 +723,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "satchel",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Michael Kors Voyager Saffiano Lavanda",
@@ -836,6 +846,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "crossbody",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Steve Madden Bharlan Llaveritos",
@@ -857,6 +868,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "satchel",
     enOferta: true,
     precioOferta: 1500,
+    vendido: true
   },
   {
     nombre: "Bolsa Steve Madden Bcitra Edición Mezclilla Patchwork",
@@ -875,6 +887,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "crossbody",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Steve Madden B-Glow Barrel Bag",
@@ -977,6 +990,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "tote",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Steve Madden Bthorne Dijes",
@@ -1017,6 +1031,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "Shoulder",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Guess Ines Carryall Tote",
@@ -1056,6 +1071,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "satchel",
     enOferta: true,
     precioOferta: 1600,
+    vendido: true
   },
   {
     nombre: "Bolsa Guess Avon Park",
@@ -1118,6 +1134,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "crossbody",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Bolsa Guess Elysia Woven",
@@ -1201,6 +1218,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "crossbody",
     enOferta: true,
     precioOferta: 1250,
+    vendido: true
   },
   {
     nombre: "Cangurera Studio Puffer Cafe",
@@ -1220,6 +1238,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "riñonera",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Cangurera Steve Madden Nylon Belt Bag Set",
@@ -1240,6 +1259,7 @@ const rawProducts: RawProduct[] = [
     subCategoria: "riñonera",
     enOferta: false,
     precioOferta: 0,
+    vendido: true
   },
   {
     nombre: "Cartera Clutch Guess Tinsley Quilted Slim",
@@ -1278,6 +1298,7 @@ const rawProducts: RawProduct[] = [
     marca: "Tommy Hilfiger",
     sexo: "dama",
     subCategoria: "carteras",
+    vendido: true
   },
   {
     nombre: "Cartera Tommy Hilfiger Trifold en Piel Sintética Granulada",
@@ -1295,6 +1316,7 @@ const rawProducts: RawProduct[] = [
     marca: "Tommy Hilfiger",
     sexo: "dama",
     subCategoria: "carteras",
+    vendido: true
   },
   {
     nombre: "Cartera Steve Madden Denim & Tan",
@@ -1311,6 +1333,7 @@ const rawProducts: RawProduct[] = [
     marca: "Steve Madden",
     sexo: "dama",
     subCategoria: "carteras",
+    vendido: true
   },
   {
     nombre: "Cartera Guess Abree Slim Clutch Logo",
@@ -1329,6 +1352,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "carteras",
+    vendido: true
   },
   {
     nombre: "Cartera Guess Rhiannon Logo Fold-Over Clutch",
@@ -1471,6 +1495,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "carteras",
+    vendido: true,
   },
   {
     nombre: 'Cartera Guess Jayla Snap "Coffee Edition"',
@@ -1487,6 +1512,8 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "carteras",
+      vendido: true
+
   },
   {
     nombre: 'Cartera Guess Foldover Zip "Black Stealth"',
@@ -1499,6 +1526,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "carteras",
+    vendido: true
   },
   {
     nombre: 'Tarjetero Guess Jayla "Pure White" con Cierre',
@@ -1517,6 +1545,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "carteras",
+    vendido: true
   },
   {
     nombre: 'Cartera Guess Saffron French Wallet "Cream Logo"',
@@ -1535,6 +1564,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "carteras",
+    vendido: true
   },
   {
     nombre: 'Tarjetero Guess Bowie "Taupe" Multi-Ranuras',
@@ -1571,6 +1601,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "carteras",
+
   },
   {
     nombre: 'Tarjetero Steve Madden "Red Passion" con Cierre',
@@ -1587,6 +1618,7 @@ const rawProducts: RawProduct[] = [
     marca: "Steve Madden",
     sexo: "dama",
     subCategoria: "carteras",
+    vendido: true
   },
 
   // Perfumes Caballero
@@ -1767,6 +1799,7 @@ const rawProducts: RawProduct[] = [
     marca: "Salvatore Ferragamo",
     sexo: "dama",
     subCategoria: "Floral",
+    vendido: true
   },
   {
     nombre: "Oscar de la Renta Extraordinary",
@@ -1808,6 +1841,7 @@ const rawProducts: RawProduct[] = [
     marca: "Lattafa",
     sexo: "dama",
     subCategoria: "Oriental",
+    vendido: true
   },
   {
     nombre: "Hugo Boss Woman Extrem",
@@ -1821,6 +1855,7 @@ const rawProducts: RawProduct[] = [
     marca: "Hugo Boss",
     sexo: "dama",
     subCategoria: "Floral",
+    vendido: true
   },
   {
     nombre: "Oscar de la Renta Extraordinary Petale",
@@ -1834,6 +1869,7 @@ const rawProducts: RawProduct[] = [
     marca: "Oscar de la Renta",
     sexo: "dama",
     subCategoria: "Floral",
+    vendido: true
   },
   {
     nombre: "Salvatore Ferragamo Eleganza",
@@ -1847,6 +1883,7 @@ const rawProducts: RawProduct[] = [
     marca: "Salvatore Ferragamo",
     sexo: "dama",
     subCategoria: "Floral",
+    vendido: true
   },
   {
     nombre: "Lattafa Yara Collection Mini",
@@ -1874,6 +1911,7 @@ const rawProducts: RawProduct[] = [
     marca: "Coach",
     sexo: "dama",
     subCategoria: "Floral",
+    vendido: true
   },
   {
     nombre: "Sweet Tooth Sabrina Carpenter",
@@ -1903,6 +1941,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "Amaderada",
     destacado: true,
+    vendido: true
   },
   {
     nombre: "Cherie Kate Spade",
@@ -1916,6 +1955,7 @@ const rawProducts: RawProduct[] = [
     marca: "Kate Spade",
     sexo: "dama",
     subCategoria: "Floral",
+    vendido: true
   },
   {
     nombre: "Jimmy Choo Floral",
@@ -1929,6 +1969,7 @@ const rawProducts: RawProduct[] = [
     marca: "Jimmy Choo",
     sexo: "dama",
     subCategoria: "Floral",
+    vendido: true
   },
   {
     nombre: "Tous Gold",
@@ -2167,6 +2208,7 @@ const rawProducts: RawProduct[] = [
     marca: "Victoria Secret",
     sexo: "dama",
     subCategoria: "Body Mist",
+    vendido: true
   },
   {
     nombre: "Pure Seduction",
@@ -2254,6 +2296,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "sandalias",
     talla: "4 Mex",
+    vendido: true
   },
   {
     nombre: "Sandalia Tommy Hilfiger Cafe Rayas",
@@ -2324,6 +2367,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "sandalias",
     talla: "6 Mex",
+    vendido: true
   },
   {
     nombre: "Sandalia de Piso Guess Color Negro Talla 6",
@@ -2353,6 +2397,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "sandalias",
     talla: "5 Mex",
+    vendido: true
   },
   {
     nombre: "Sandalia Guess Holograma Color Chocolate",
@@ -2367,6 +2412,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "sandalias",
     talla: "3 Mex",
+    vendido: true
   },
   {
     nombre: "Sandalia de Piso Guess Color Negro",
@@ -2381,6 +2427,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "sandalias",
     talla: "5 Mex",
+    vendido: true
   },
   {
     nombre: "Sandalias Quiksilver Cafe con Negro",
@@ -2395,6 +2442,7 @@ const rawProducts: RawProduct[] = [
     sexo: "caballero",
     subCategoria: "sandalias",
     talla: "9 Mex",
+    vendido: true
   },
   {
     nombre: "Sanadalia Guess Holograma Color Blanco",
@@ -2409,6 +2457,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "sandalias",
     talla: "6 Mex",
+    vendido: true
   },
   {
     nombre: "Sanadalia Pines Karl Lagerfeld",
@@ -2494,6 +2543,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "tenis",
     talla: "6 Mex",
+    vendido: true
   },
   {
     nombre: "Tenis Reebok Bellwave Color Arena",
@@ -2596,6 +2646,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "tenis",
     talla: "6 Mex",
+    vendido: true
   },
   {
     nombre: "Tenis Guess en color rosa viejo",
@@ -2610,6 +2661,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "tenis",
     talla: "6 Mex",
+    vendido: true
   },
   {
     nombre: "Tenis Reebook R400 Rojo",
@@ -2638,6 +2690,7 @@ const rawProducts: RawProduct[] = [
     sexo: "dama",
     subCategoria: "tenis",
     talla: "5 Mex",
+    vendido: true
   },
 
   // Accesorios
@@ -2653,6 +2706,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "gel antibacterial",
+    vendido: true
   },
   {
     nombre: "Raspberries & Whipped Vanilla",
@@ -2666,6 +2720,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "gel antibacterial",
+    vendido: true
   },
   {
     nombre: "Fiji White Sands",
@@ -2679,6 +2734,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "gel antibacterial",
+    vendido: true
   },
   {
     nombre: "Lavander Vanilla",
@@ -2692,6 +2748,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "gel antibacterial",
+    vendido: true
   },
   {
     nombre: "Watermelon Lemonade",
@@ -2705,6 +2762,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "gel antibacterial",
+    vendido: true
   },
   {
     nombre: "Raspberries Tangerine",
@@ -2718,6 +2776,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "gel antibacterial",
+    vendido: true
   },
   {
     nombre: "Japanese Cherry Blossom",
@@ -2731,6 +2790,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "gel antibacterial",
+    vendido: true
   },
   {
     nombre: "Champagne Toast",
@@ -2744,6 +2804,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "gel antibacterial",
+    vendido: true
   },
   {
     nombre: "Black Cherry Merlot",
@@ -2757,6 +2818,7 @@ const rawProducts: RawProduct[] = [
     marca: "Bath & Body Works",
     sexo: "dama",
     subCategoria: "gel antibacterial",
+    vendido: true
   },
   {
     nombre: "Toalla Lacoste Naranja",
@@ -2770,6 +2832,7 @@ const rawProducts: RawProduct[] = [
     marca: "Lacoste",
     sexo: "unisex",
     subCategoria: "Toallas",
+    vendido: true
   },
   {
     nombre: "Gorra Columbia modelo Snapback Trucker",
@@ -2844,6 +2907,7 @@ const rawProducts: RawProduct[] = [
     marca: "Champion",
     sexo: "dama",
     subCategoria: "Gorras",
+    vendido: true
   },
   {
     nombre: "Cosmetiquera Guess Hologramas Chocolate",
@@ -2860,6 +2924,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "cosmetiquera",
+    vendido: true
   },
   {
     nombre: "Termo Stanley Quencher Pistacho 887ML",
@@ -2873,6 +2938,7 @@ const rawProducts: RawProduct[] = [
     marca: "Stanley",
     sexo: "unisex",
     subCategoria: "Termos",
+    vendido: true
   },
   {
     nombre: "Billetera Caballero Guess",
@@ -2907,6 +2973,7 @@ const rawProducts: RawProduct[] = [
     marca: "Calvin Klein",
     sexo: "caballero",
     subCategoria: "billeteras",
+    vendido: true
   },
   {
     nombre: 'Billetera Columbia "Passcase" en Piel Texturizada',
@@ -3061,6 +3128,7 @@ const rawProducts: RawProduct[] = [
     marca: "Guess",
     sexo: "dama",
     subCategoria: "cosmetiquera",
+    vendido: true
   },
   {
     nombre: "Billetera Michael Kors Slim Billfold Signature",
