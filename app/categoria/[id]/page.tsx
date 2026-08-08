@@ -25,9 +25,8 @@ export function generateStaticParams() {
   }));
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
+export default async function CategoryPage({ params }: CategoryPageProps) {
   const category = getCategoryById(params.id);
-  const products = getProductsByCategory(params.id);
 
   if (!category) {
     return (
@@ -40,6 +39,8 @@ export default function CategoryPage({ params }: CategoryPageProps) {
       </div>
     );
   }
+
+  const products = await getProductsByCategory(params.id);
 
   return (
     <div className="min-h-screen pt-0">
