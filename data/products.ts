@@ -64,7 +64,8 @@ export async function getAllProducts(): Promise<Product[]> {
   const { data, error } = await supabase
     .from("products")
     .select("*")
-    .eq("oculto", false);
+    .eq("oculto", false)
+    .order("created_at", { ascending: false });
   if (error) throw error;
   return (data ?? []).map(mapRow);
 }
@@ -74,7 +75,8 @@ export async function getProductsByCategory(category: string): Promise<Product[]
     .from("products")
     .select("*")
     .eq("categoria", category)
-    .eq("oculto", false);
+    .eq("oculto", false)
+    .order("created_at", { ascending: false });
   if (error) throw error;
   return (data ?? []).map(mapRow);
 }
@@ -96,7 +98,8 @@ export async function searchProducts(query: string): Promise<Product[]> {
     .from("products")
     .select("*")
     .ilike("nombre", `%${q}%`)
-    .eq("oculto", false);
+    .eq("oculto", false)
+    .order("created_at", { ascending: false });
   if (error) throw error;
   return (data ?? []).map(mapRow);
 }
@@ -106,14 +109,18 @@ export async function getFeaturedProducts(): Promise<Product[]> {
     .from("products")
     .select("*")
     .eq("destacado", true)
-    .eq("oculto", false);
+    .eq("oculto", false)
+    .order("created_at", { ascending: false });
   if (error) throw error;
   return (data ?? []).map(mapRow);
 }
 
 // Trae TODOS los productos, incluidos los ocultos — solo para vistas internas
 export async function getAllProductsAdmin(): Promise<Product[]> {
-  const { data, error } = await supabase.from("products").select("*");
+  const { data, error } = await supabase
+    .from("products")
+    .select("*")
+    .order("created_at", { ascending: false });
   if (error) throw error;
   return (data ?? []).map(mapRow);
 }
